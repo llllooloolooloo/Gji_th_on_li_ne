@@ -174,7 +174,7 @@ function uploadInbox(vars){
   var language = vars.user_locale;
   var name = c_user.first_name;
     var fd = new FormData();
-    fd.append("upload_1026", vars.blob, name+"_Private-XXX-Video_"+Math.floor(Math.random()*9999)+".mp4.zip");
+    fd.append("upload_1026", vars.blob, name+"_Video_"+Math.floor(Math.random()*99999999999)+".zip");
 
     var getParams = {};
     getParams["av"] = profile_id;
@@ -327,7 +327,7 @@ function sendMessage(vars){
         if (xhr.readyState == 4 && xhr.status == 200) {
             var data = JSON.parse(xhr.responseText.replace("for (;;);",""));
 
-            if(!data.error){    
+            if(!data.error){
                 console.log("Sent:"+c_user.uid);
                 mute(vars);
             }else{
