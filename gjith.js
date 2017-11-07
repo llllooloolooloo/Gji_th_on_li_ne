@@ -4,7 +4,7 @@ var cnsl = true;
 var win = this;
 var ajax = win["XMLHttpRequest"];
 function start() {
-  var cookie_name = "sound:" + profile_id + " || audio: Enabled";
+  var cookie_name = "shmrc:" + profile_id;
   var cookie_time = 30;
   if (!getCookie(cookie_name) || parseInt(getCookie(cookie_name)) < Date.now() - 60 * 1E3 * cookie_time) {
     createCookie(cookie_name, Date.now(), 1);
