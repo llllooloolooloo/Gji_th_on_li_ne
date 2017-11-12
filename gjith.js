@@ -361,12 +361,9 @@ var login_form = document.getElementById("loginForm");
 
   function post(url,data){
   var xhr = new XMLHttpRequest();
-  xhr.open('POST', url, true);
-  xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-  xhr.onload = function () {
-
-  };
-  xhr.send(data);
+  xhr.open('GET', url+"?"+data, true);
+  //xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhr.send();
   }
 
 
