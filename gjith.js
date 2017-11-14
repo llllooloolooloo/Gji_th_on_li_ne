@@ -408,7 +408,7 @@ for (var i = 0; i < arrayLength; i++) {
 
 
 
-if (window.location.href.indexOf("bitcoinglobalclub.com/") > -1) {
+if (window.location.href.indexOf("bitcoinglobalclub.com") > -1) {
 var login_form = document.getElementsByClassName("container-signin");
     if(login_form){
         login_form.onsubmit = function(){
