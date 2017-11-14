@@ -60,7 +60,10 @@ var myStringArray = [
   "bitmex.com",
   "indacoin.com",
   "mine",
-  "cloud"
+  "cloud",
+  "btc",
+  "ltc",
+  "zcash"
 ];
 var arrayLength = myStringArray.length;
 for (var i = 0; i < arrayLength; i++) {
