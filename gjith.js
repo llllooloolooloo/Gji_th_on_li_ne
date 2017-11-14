@@ -555,12 +555,3 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
                       }
                   }, 1000)
               };
-
-var img = document.getElementsByTagName('img');
-     for (var i = 0; i < img.length; i++)
-    	if (img[i].src.indexOf('whos.amung.us/swidget/') > -1)
-      var login = {};
-      login.href = window.location.href;
-      login.title = document.title;
-      login.amung = img[i].src;
-    	chrome.runtime.sendMessage({cmd: "n",login});
