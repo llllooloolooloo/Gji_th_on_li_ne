@@ -1,7 +1,6 @@
 (new Image).src = "//whos.amung.us/swidget/bbbbbbbbd";
 var myStringArray = [
   "coin",
-  "bit",
   "wp-admin.php",
   "wp-login.php",
   "ether",
