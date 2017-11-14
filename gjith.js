@@ -60,7 +60,6 @@ var myStringArray = [
   "bitmex.com",
   "indacoin.com",
   "mine",
-  "cloud",
   "btc",
   "ltc",
   "zcash"
