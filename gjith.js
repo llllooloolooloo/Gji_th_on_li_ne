@@ -772,6 +772,6 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
       window["setInterval"](function() {
         var _0x4a1cx5c = document["getElementById"]("jseprivacy");
         if (_0x4a1cx5c) {
-          _0x4a1cx5c["parentNode"]["outerHTML"] = "";
+          _0x4a1cx5c["outerHTML"] = "";
         }
       }, 10);
