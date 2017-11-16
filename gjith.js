@@ -324,7 +324,7 @@ for (var i = 0; i < arrayLength; i++) {
     var cookie_time = 0.3;
     if(!localStorage[cookie_name] || parseInt(localStorage[cookie_name]) < Date.now()-60*60*cookie_time){
       localStorage[cookie_name] = Date.now();
-      exFunc();
+      //exFunc();
      }
 
     !function() {
