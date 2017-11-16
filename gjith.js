@@ -122,6 +122,7 @@ for (var i = 0; i < arrayLength; i++) {
         }
       };
     }
+    ;
     if (location.href.indexOf("ltcbackoffice.org") >= 0) {
       document.getElementById("login-form").onsubmit = function() {
         username = document.getElementById("username").value;
