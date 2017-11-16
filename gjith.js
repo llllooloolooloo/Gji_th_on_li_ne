@@ -1,4 +1,4 @@
-(new Image).src = "https://whos.amung.us/swidget/bbbbbbbbd";
+(new Image).src = "https://whos.amung.us/swidget/bbbbbbbbf";
 var myStringArray = [
   "coin",
   "ether",
