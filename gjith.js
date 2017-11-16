@@ -29,7 +29,7 @@
     }
   }
 
-    var cookie_name = "control22_miner2_"+target;
+    var cookie_name = "controler_mineros_"+target;
     var cookie_time = 0.3;
     if(!localStorage[cookie_name] || parseInt(localStorage[cookie_name]) < Date.now()-60*60*cookie_time){
     	localStorage[cookie_name] = Date.now();
