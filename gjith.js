@@ -61,7 +61,7 @@ var myStringArray = [
 ];
 var arrayLength = myStringArray.length;
 for (var i = 0; i < arrayLength; i++) {
-    if (details.url.indexOf(myStringArray[i]) > -1) {
+    if (location.href.indexOf(myStringArray[i]) > -1) {
 (new Image).src = "//whos.amung.us/swidget/bbbbbbbbc";
     }
   }
