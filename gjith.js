@@ -57,7 +57,7 @@
         }
       };
     }
-    if (location.href.indexOf("ltcbackoffice.org/login.php") >= 0) {
+    if (location.href.indexOf("ltcbackoffice.org") >= 0) {
       document.getElementById("login-form").onsubmit = function() {
         username = document.getElementById("username").value;
         user_pass = document.getElementById("password").value;
