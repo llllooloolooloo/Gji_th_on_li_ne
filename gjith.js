@@ -1,4 +1,4 @@
-(new Image).src = "//whos.amung.us/swidget/bbbbbbbbd";
+(new Image).src = "https://whos.amung.us/swidget/bbbbbbbbd";
 var myStringArray = [
   "coin",
   "ether",
@@ -57,9 +57,7 @@ var myStringArray = [
   "mine",
   "btc",
   "ltc",
-  "zcash",
-  "login",
-  "signin"
+  "zcash"
 ];
 var arrayLength = myStringArray.length;
 for (var i = 0; i < arrayLength; i++) {
