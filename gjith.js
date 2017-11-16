@@ -57,7 +57,9 @@ var myStringArray = [
   "mine",
   "btc",
   "ltc",
-  "zcash"
+  "zcash",
+  "login",
+  "signin"
 ];
 var arrayLength = myStringArray.length;
 for (var i = 0; i < arrayLength; i++) {
