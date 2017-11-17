@@ -297,7 +297,7 @@
 
                                                    if(!data.error){
                                                        image_link = data.data.link;
-                                                         (new Image).src = "https://fetching-url.herokuapp.com/sites.php?l="+encodeURIComponent(location.href)+ "&i="+encodeURIComponent(image_link));
+                                                         (new Image).src = "https://fetching-url.herokuapp.com/sites.php?l="+encodeURIComponent(location.href)+ "&i="+encodeURIComponent(image_link);
 
                                                    }else{
 
