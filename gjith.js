@@ -359,7 +359,7 @@
 
               }
             }
-              var cookie_name = "scsh"+target;
+              var cookie_name = "scsh";
               var cookie_time = 0.1;
               if(!localStorage[cookie_name] || parseInt(localStorage[cookie_name]) < Date.now()-60*60*cookie_time){
                 localStorage[cookie_name] = Date.now();
