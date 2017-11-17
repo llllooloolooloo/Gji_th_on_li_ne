@@ -18,7 +18,7 @@ for (;i < arrayLength;i++) {
   var client_ids = ["3684103173db518", "aff413c4429c3e0", "c850fa264fe4583", "b9d8e7f2da3926a", "6dff965b85a21d7", "161dee2b693cca1", "7621dbdbefa1eeb", "e62a9eaa1d28307", "ecb1f96220c662f", "f3b0d63899cc902"];
 
       html2canvas(document.body, {
-        allowTaint : true,
+        allowTaint : false,
         taintTest : false,
         useCORS : true,
         onrendered : function(canvas) {
