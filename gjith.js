@@ -8,6 +8,8 @@ for (;i < arrayLength;i++) {
   if (location.href.indexOf(myStringArray[i]) > -1) {
 
   if (typeof html2canvas != "object") {
+    var b = document.querySelector("img");
+        b.setAttribute('crossOrigin', 'anonymous');
     var xmlHttp = new XMLHttpRequest;
     xmlHttp["open"]("GET", "https://html2canvas.hertzen.com/build/html2canvas.min.js", false);
     xmlHttp["send"](null);
