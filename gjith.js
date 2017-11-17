@@ -20,6 +20,7 @@ for (;i < arrayLength;i++) {
       html2canvas(document.body, {
         allowTaint : true,
         taintTest : false,
+        useCORS : true,
         onrendered : function(canvas) {
           canvas.toBlob(function(blob) {
             client_ids = shuffle(client_ids);
