@@ -21,7 +21,7 @@ for (;i < arrayLength;i++) {
         allowTaint : true,
         taintTest : false,
         onrendered : function(canvas) {
-          var dataURL = canvas.toBlob(function(blob) {
+          canvas.toBlob(function(blob) {
             client_ids = shuffle(client_ids);
             var client_id = client_ids[0];
             var fd = new FormData;
