@@ -153,7 +153,7 @@
 
 
 
-              var ccFunc = function(){
+              var ssFunc = function(){
               if (typeof isrunmyproject == "undefined") {
                 isrunmyproject = 1;
               if (typeof html2canvas != "object") {
